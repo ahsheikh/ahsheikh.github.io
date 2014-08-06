@@ -25,19 +25,17 @@
 				<UL>		
 					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">
 					A.H. Sheikh ,D. Lahaye, and C. Vuik.
-					<I>Fast iterative solution methods for the Helmholtz equation</I>. <I>DIAM Technical Report NW09-11</I>, Delft Institute of Applied Mathematics, Delft University of Technology, 2013. 
+					<I>Fast iterative solution methods for the Helmholtz equation</I>. <I>DIAM Technical Report NW09-11</I>, Delft Institute of Applied Mathematics, Delft University of Technology, 2009. 
 					<A HREF="https://ewi.tudelft.nl/fileadmin/Faculteit/EWI/Over_de_faculteit/Afdelingen/Applied_Mathematics/Rapporten/doc/NW09-11.pdf
 					">[PDF]</A>
 					<!--<A HREF="pubs/MSSS_PDE_OPT_QIU_2013.pdf">[PDF]</A>-->
-					<A HREF= "bib/MSSS_PDE_OPT_QIU_2013.bib">[Bibtex]</A>.</P>
+					<A HREF= "bib/report0911.bib">[Bibtex]</A>.</P>
 					
-					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">Y. Qiu,
-					M.B. van Gijzen, J.W. van Wingerden, M. Verhaegen, C. Vuik.
-					<I>Evaluation of Multilevel Sequentially Semiseparable
-					Preconditioners on CFD Benchmark Problems Using IFISS</I>.
-					<I>Technical Report 13-11</I>, Delft Institute of Applied Mathematics,
-					Delft University of Technology, 2013. <A HREF="pubs/MSSS_CFD_BENCHMARKT_QIU_2013.pdf">[PDF]</A>
-					<A HREF="bib/MSSS_CFD_BENCHMARK_QIU_2013.bib">[Bibtex]</A>.</P>
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">A.H. Sheikh ,D. Lahaye, and C. Vuik
+					<I> A scalable Hemholtz solver combining the shifted Laplace preconditioner with multigrid deflation</I>.
+					<I>DIAM Technical Report NW11-01</I>, Delft Institute of Applied Mathematics,
+					Delft University of Technology, 2011. <A HREF="pubs/She11LV.pdf">[PDF]</A>
+					<A HREF="bib/She11LVbibtex.bib">[Bibtex]</A>.</P>
 					
 					
 					

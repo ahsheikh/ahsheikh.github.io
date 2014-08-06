@@ -1,0 +1,7 @@
+@inproceedings{sheikhTUD09,
+    title={A Scalable Helmholtz Solver Combining the Shifted Laplace Preconditioner with Multigrid Deflation},
+  author={A.H. Sheikh and D. Lahaye, and C. Vuik},
+       institution = {Delft Institution of Applied Mathematics, Delft University of Technology, Netherlands},
+      year = {2011},
+      number = {NW11-01},
+ }
