@@ -22,7 +22,8 @@
 	</STYLE>
 </HEAD>
 <!-- #C7EDCC -->
-<BODY LANG="en-US" LINK="#0000ff" VLINK="#000000" BGCOLOR="#E6E6FA" DIR="LTR">
+<BODY LANG="en-US" LINK="#0000ff" VLINK="#000000" BGCOLOR="#FFFFDE" DIR="LTR">
+<!--#E6E6FA-->
 <CENTER>
 	<TABLE WIDTH=888 CELLPADDING=2 CELLSPACING=2 STYLE="page-break-before: always">
 	<BR>
@@ -96,14 +97,12 @@
 				<LI><P STYLE="margin-bottom: 0in; line-height: 150%">M.Sc. Mathematics, <A HREF="http://math.qau.edu.pk//">Quaid Azam University </A>, Islamabad, Pakistan (2005.01-2007.01).</P>
 				<LI><P STYLE="margin-bottom: 0in; line-height: 150%">B.Sc. Mathematics, Physics and Computer Science, <A HREF="http://salu.edu.pk/"> Shah Abdul Latif University, </A>, Khairpur, Pakistan (2001.08-2004.08).</P>
 				</UL>
-				
 				<h1>This is heading 1</h1>
-<h2>This is heading 2</h2>
+				<h2>This is heading 2</h2>
 <h3>This is heading 3</h3>
 <h4>This is heading 4</h4>
 <h5>This is heading 5</h5>
 <h6>This is heading 6</h6>
-				
 				<HR>
 				<H2 CLASS="western">Activities</H2>
 				<H2 CLASS="western">Research: </H2>
