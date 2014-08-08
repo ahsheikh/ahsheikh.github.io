@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE>AH Sheikh - TUDeft Homepage</TITLE>
+	<TITLE>Abdul Hanan Sheikh - TUDeft Homepage</TITLE>
 	<META NAME="GENERATOR" CONTENT="LibreOffice 3.5  (Linux)">
 	<META NAME="CREATED" CONTENT="0;0">
 	<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
@@ -131,6 +131,23 @@
 				<H2 CLASS="western">Software:</H2>
 				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
 				<A HREF="software.html">Click here for software packages</A>
+				</P>
+
+				<H2 CLASS="western">Events:</H2>
+				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
+<UL>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 150%">
+				<A HREF="http://metronu.ulb.ac.be/EMG2014/">European Multigrid Conference, 2014 Leuven Belgium</A> </P>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="http://ncmcs.quest.edu.pk/"> National Conference on Mathematics and Computer Science, &#64 QUEST Nawabshah Pakistan. </A> </P>
+</UL>
+				<H2 CLASS="western">Useful links</H2>
+				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
+<UL>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 150%">
+				<A HREF="http://www.netlib.org/">Netlib Repository</A> </P>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="http://www.mgnet.org/"> MultiGrid Network. </A> </P>
+</UL>
+
 				</P>
 				
 			</TD>
