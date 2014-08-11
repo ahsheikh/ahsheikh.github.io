@@ -20,10 +20,10 @@
 	</STYLE>
 </HEAD>
 <BODY LANG="en-US" LINK="#0000ff" VLINK="#000000" BGCOLOR="#D8E6FF" DIR="LTR">   <!--#FFFFDE -->
-				<H2 CLASS="western">List of Software:</H2>
+				<H2 CLASS="western">Software page of AH Sheikh:</H2>
 Following software can be obtained on this page. 
 				<UL>		
-					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="soft/adef1.html">[Instructions]</A>.
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="soft/adef1.html">Software for multilevel ADEF1 solver for Helmholtz equation</A>
 					<!--<A HREF="bib/MSSS_toolbox.bib">[Bibtex]</A>.</P> -->
 					
 					
