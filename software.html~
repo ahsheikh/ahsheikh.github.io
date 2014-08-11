@@ -23,7 +23,7 @@
 				<H2 CLASS="western">Software page of AH Sheikh:</H2>
 Following software can be obtained on this page. 
 				<UL>		
-					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="soft/adef1.html">Software for multilevel ADEF1 solver for Helmholtz equation</A>
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="adef1.html">Software for multilevel ADEF1 solver for Helmholtz equation</A>
 					<!--<A HREF="bib/MSSS_toolbox.bib">[Bibtex]</A>.</P> -->
 					
 					
