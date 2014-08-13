@@ -19,10 +19,11 @@
 	-->
 	</STYLE>
 </HEAD>
-<BODY LANG="en-US" LINK="#0000ff" VLINK="#000000" BGCOLOR="#FFFFDE" DIR="LTR">
-				<H2 CLASS="western">ADEF1 Sover:</H2>
+<BODY LANG="en-US" LINK="#0000ff" VLINK="#000000" BGCOLOR="#D8E6FF" DIR="LTR">   <!--#FFFFDE -->
+				<H2 CLASS="western">Software page of AH Sheikh:</H2>
+Following software can be obtained on this page. 
 				<UL>		
-					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> Multilevel ADEF1 solver implemented in <A HREF="http://www.mcs.anl.gov/petsc">PETSc </A>. <A HREF="https://github.com/ahsheikh/Adef1_Software/">Download  files</A>. <A HREF="soft/intro_adef1solver.pdf">[Instructions]</A>.
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="adef1.html">Software for multilevel ADEF1 solver for Helmholtz equation</A>
 					<!--<A HREF="bib/MSSS_toolbox.bib">[Bibtex]</A>.</P> -->
 					
 					
