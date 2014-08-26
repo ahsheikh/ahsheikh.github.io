@@ -2,7 +2,7 @@
 <body bgcolor="#FFFFE8" link="#FF0000" vlink="#0000FF">
 <h2>Helmholtz ADEF1 solver software </h2>
 
-Here the software implementing our multilevel ADEF1 solver is given (together with a manual) to solve the two-dimensional <a href="http://sw3d.cz/software/marmousi/marmousi.htm">Marmousi Problem</a>. The solver part of software is implemented in implemented in <A HREF="http://www.mcs.anl.gov/petsc">PETSc </A> whereas matrices are built in Matlab. For further instruction, see <A HREF="soft/intro_adef1solver.pdf">[Manual]</A>
+Here the software implementing our multilevel ADEF1 solver is given (together with a manual) to solve the two-dimensional <a href="http://sw3d.cz/software/marmousi/marmousi.htm">Marmousi Problem</a>. The solver part of software is implemented in <A HREF="http://www.mcs.anl.gov/petsc">PETSc </A> whereas matrices are built in Matlab. For further instruction, see <A HREF="soft/intro_adef1solver.pdf">[Manual]</A>
 <br><br>
 Codes and READMe file/manual:
 <ul>
@@ -17,6 +17,7 @@ href="http://ta.twi.tudelft.nl/nw/users/vuik/pub_it_helmholtz.html">publications
  <!-- and <a href="http://ta.twi.tudelft.nl/nw/users/vuik/numanal/erlangga_press.html">
 press bulletins</a>.
 -->
+</p>
 Some selected publications:
 
 <ul>
