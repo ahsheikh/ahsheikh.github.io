@@ -15,11 +15,11 @@
 		H2.cjk { font-family: "Droid Sans" }
 		H2.ctl { font-family: "FreeSans" }
 		A:link { color: #0000ff; text-decoration: none }
-		A:visited { color: #000000 }
+		A:visited { color: #FF0000 }
 	-->
 	</STYLE>
 </HEAD>
-<BODY LANG="en-US" LINK="#0000ff" VLINK="#000000" BGCOLOR="#D8E6FF" DIR="LTR">   <!--#FFFFDE -->
+<BODY LANG="en-US" LINK="#0000ff" VLINK="#FF0000" BGCOLOR="#D8E6FF" DIR="LTR">   <!--#FFFFDE -->
 				<H2 CLASS="western">Software page of AH Sheikh:</H2>
 Following software can be obtained on this page. 
 				<UL>		
