@@ -17,7 +17,7 @@
 		H3.cjk { font-family: "Droid Sans" }
 		H3.ctl { font-family: "FreeSans" }
 		A:link { color: #0000ff; text-decoration: none }
-		A:visited { color: #000000 }
+		A:visited { color: #E61616}
 	-->
 	</STYLE>
 </HEAD>
