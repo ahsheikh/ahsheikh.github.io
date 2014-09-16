@@ -76,12 +76,8 @@
 				
 				<H2 CLASS="western">Posters:</H2>
 				<UL>
-					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Efficient
-					Preconditioners for PDE-Constrained Optimization Problems with
-					Multilevel Sequentially Semiseparable Structure. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
-					<A HREF="http://www.fondation-stae.net/fr/optimization-july2013.html">Recent
-					Advances on Optimization</A>, July 24-26, 2013. Toulouse,
-					France. <A HREF="pos/PDE_Cons_Post_QIU_2013.pdf">[PDF]</A>.</SPAN></SPAN>
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Fast iterative schemes for numerical solution of Helmholtz equation. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
+					<A HREF="http://wsc.project.cwi.nl/woudschoten/2009/conferentieE.php">The Thirty-fourth Woudschoten Conference, October 7-9, 2009. Zeist, The Netherlands.<A HREF="pos/PosWouds09.pdf">[PDF]</A>.</SPAN></SPAN>
 										</P>
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Identification
 					and Distributed Control of Large Scale Systems : an Application
