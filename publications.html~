@@ -117,15 +117,19 @@
 
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
 					<I>An Scalable Helmholtz Solver Combining the Shifted Laplace
-					Preconditioner With Multigrid Deflation </I>. <A HREF="http://www.cerfacs.fr/6-26925-Sparse-Days-2011.php">Sparse Days Meeting </A>,  September 06-07, 2011, CERFACS, Tolouse France. <A HREF="talks/talk06september2011.pdf">[Slides]</A>.
+					Preconditioner With Multigrid Deflation.</I> <A HREF="http://www.cerfacs.fr/6-26925-Sparse-Days-2011.php">Sparse Days Meeting </A>,  September 06-07, 2011, <A HREF="http://www.cerfacs.fr/">CERFACS </A>, Tolouse France. <A HREF="talks/talk06september2011.pdf">[Slides]</A>.
 					</SPAN>		
 
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
-					<I>An efficient iterative scheme for the Helmholtz equation with deflation. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2010/">Eleventh Copper Mountain Conference on ITERATIVE METHODS, April 04-09, 2011, Colorado IL, USA. </A>  <A HREF="talks/ECC_2014_slides_QIU.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2010/abstract/sheik112506/"> [Abstract]</A>
+					<I>A scalable Helmholtz solver combining the deflation with shifted Laplace preconditioner. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2011/">Fifteenth Copper Mountain Conference on MULTIGRID METHODS</A>, March 27 - 01 April 01, 2011, Colorado IL, USA. <A HREF="talks/ECC_2014_slides_QIU.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2011/abstract/sheik109177/"> [Abstract]</A>
 					</SPAN>
 					</P>
 					
-										
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>An efficient iterative scheme for the Helmholtz equation with deflation. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2010/">Eleventh Copper Mountain Conference on ITERATIVE METHODS, April 04-09, 2010, Colorado IL, USA. </A>  <A HREF="talks/ECC_2014_slides_QIU.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2010/abstract/sheik112506/"> [Abstract]</A>
+					</SPAN>
+					</P>
+					      
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
 					<I>Efficient Preconditioners with Multilevel Sequentially SemiSeparable Structure</I>. In the 11th International Conference on Numerical Analysis and Applied Mathematics (ICNAAM), September 21-27, 2013, Rhodos, Greece. <A HREF="talks/ICNAAM_2013_QIU.pdf">[Slides]</A>.
 					</SPAN>
