@@ -96,11 +96,10 @@
 					Seminar on Wind Energy in Europe</A>, September 12 - 13, 2012.
 					ETH, Zurich, Switzerland. <A HREF="pos/EAWE_ETH_QIU_2012.pdf">[PDF]</A> </SPAN></SPAN></P>
 					
-					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Fast algorithms for SSS
-					matrix problems and their application to wind farm control. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>On convergence of shifted Laplace preconditioner combined with multigrid deflation. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
 					<A HREF="http://ta.twi.tudelft.nl/wagm/users/rojas/NLA2012/NLA2012.html">Symposium
 					on Numerical Linear Algebra - Algorithms, Applications, and
-					Training</A>, April 10-13, 2012. Delft, the Netherlands. <A HREF="pos/NLA_QIU_2012.pdf">[PDF]</A> 
+					Training</A>, April 10-13, 2012. Delft, the Netherlands. <A HREF="pos/NLA_Delft_2012.pdf">[PDF]</A> 
 					
 					
 					</UL>
@@ -121,7 +120,7 @@
 					</SPAN>		
 
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
-					<I>A scalable Helmholtz solver combining the deflation with shifted Laplace preconditioner. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2011/">Fifteenth Copper Mountain Conference on MULTIGRID METHODS</A>, March 27 - 01 April 01, 2011, Colorado IL, USA. <A HREF="talks/ECC_2014_slides_QIU.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2011/abstract/sheik109177/"> [Abstract]</A>
+					<I>A scalable Helmholtz solver combining the deflation with shifted Laplace preconditioner. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2011/">Fifteenth Copper Mountain Conference on MULTIGRID METHODS</A>, March 27 - 01 April 01, 2011, Colorado IL, USA. <A HREF="talks/Copper_Talk2011.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2011/abstract/sheik109177/"> [Abstract]</A>
 					</SPAN>
 					</P>
 					
