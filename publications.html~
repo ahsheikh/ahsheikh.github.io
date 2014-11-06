@@ -21,8 +21,28 @@
 	</STYLE>
 </HEAD>
 <BODY LANG="en-US" LINK="#0000ff" VLINK="#FF0000" BGCOLOR="#C7EDCC" DIR="LTR">
-				<H2 CLASS="western">Preprint Technical Reports:</H2>
-				<UL>		
+				
+
+					
+					<H2 CLASS="western">PhD Thesis </H2>
+					<UL>		
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">
+					<I>Development of Helmholtz Solver Based on Shifted Laplace Preconditioner and a Multigrid Deflation Technique. </I>. Delft Institute of Applied Mathematics, Delft University of Technology, 2014. 
+					<A HREF="pubs/Abdul_Thesis_Final.pdf">[PDF]</A>
+					<!--<A HREF="pubs/MSSS_PDE_OPT_QIU_2013.pdf">[PDF]</A>-->
+					.</P>
+					
+					<!--<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">A.H. Sheikh ,D. Lahaye, and C. Vuik
+					<I> A scalable Hemholtz solver combining the shifted Laplace preconditioner with multigrid deflation</I>.
+					<I>DIAM Technical Report NW11-01</I>, Delft Institute of Applied Mathematics,
+					Delft University of Technology, 2011. <A HREF="pubs/She11LV.pdf">[PDF]</A>
+					<A HREF="bib/She11LVbibtex.bib">[Bibtex]</A>.</P>
+					-->					
+					</UL>
+					
+
+					 <H2 CLASS="western">Preprint Technical Reports:</H2>
+					<UL>		
 					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">
 					A.H. Sheikh ,D. Lahaye, and C. Vuik.
 					<I>Fast iterative solution methods for the Helmholtz equation</I>. <I>DIAM Technical Report NW09-11</I>, Delft Institute of Applied Mathematics, Delft University of Technology, 2009. 
@@ -36,9 +56,7 @@
 					<I>DIAM Technical Report NW11-01</I>, Delft Institute of Applied Mathematics,
 					Delft University of Technology, 2011. <A HREF="pubs/She11LV.pdf">[PDF]</A>
 					<A HREF="bib/She11LVbibtex.bib">[Bibtex]</A>.</P>
-					
-					
-					
+										
 					</UL>
 					
 					
@@ -174,7 +192,7 @@
 					
 
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
-					<A HREF="http://www.utwente.nl/ewi/nmc2011/"><I>Nederlands Mathematisch Congres 2011, </I></A>. April 14-15, 2011, <A HREF="http://www.cerfacs.fr/">Universiteit Twente,</A>, Twente, Netherlands.
+					<A HREF="http://www.utwente.nl/ewi/nmc2011/"><I>Nederlands Mathematisch Congres 2011, </I></A>. April 14-15, 2011, <A HREF="http://www.utwente.nl/">Universiteit Twente,</A>, Twente, Netherlands.
 					</SPAN>
 					</P>
 
