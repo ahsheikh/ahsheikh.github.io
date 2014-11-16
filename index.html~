@@ -151,10 +151,10 @@
 <UL>
 
 <LI><P STYLE="margin-bottom: 0in; line-height: 150%">
-				<A HREF="http://sscdelft.github.com/">Founding Member of SIAM Students Chapter, Delft University of Technology, The Netherlands. </A> </P>
+				Founding Member of <A HREF="http://sscdelft.github.com/"> SIAM Students Chapter, </A> Delft University of Technology, The Netherlands.</P>
 
 <LI><P STYLE="margin-bottom: 0in; line-height: 150%">
-				Member, <A HREF="http://pakms.org.pk/">Pakistan Mathematical Society, Islamabad Pakistan. </A> </P>
+				Member, <A HREF="http://pakms.org.pk/">Pakistan Mathematical Society,</A> Islamabad Pakistan.</P>
 
 
 </UL>
@@ -164,10 +164,8 @@
 				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
 <UL>
 
-				<LI><P STYLE="margin-bottom: 0in; line-height: 150%">
-				<A HREF="http://metronu.ulb.ac.be/EMG2014/">European Multigrid Conference, 2014 Leuven Belgium</A> </P>
-				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="http://ncmcs.quest.edu.pk/"> National Conference on Mathematics and Computer Science, &#64 QUEST Nawabshah Pakistan. </A>
- </P>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> European Multigrid Conference, <A HREF="http://metronu.ulb.ac.be/EMG2014/"> EMG 2014, </A> Leuven, Belgium.</P>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> National Conference on Mathematics and Computer Science,<A HREF="http://ncmcs.quest.edu.pk/"> NCMCS 2015, </A> &#64 QUEST Nawabshah Pakistan.</P>
 </UL>
 				<H3 CLASS="western">Useful links</H3>
 				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
@@ -179,8 +177,13 @@
 				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="http://www.mgnet.org/"> MultiGrid Network. </A> </P>
 				<LI><P STYLE="margin-bottom: 0in; line-height: 150%"> 
 				Brain Games; <A HREF="http://www.brainmetrix.com/"> BrainMetrix</A> ,and <A HREF="http://www.logicgamesonline.com/"> Logic Games. </A> </P>
+<<<<<<< HEAD
 			        <LI><P STYLE="margin-bottom: 0in; line-height: 150%">
                                 <A HREF="studentsportal/studentsportal.html"> Students Portal</A> </P> 
+=======
+			        <!--<LI><P STYLE="margin-bottom: 0in; line-height: 150%">
+                                <A HREF="studentsportal/studentsportal.html"> Students Portal</A> </P> -->
+>>>>>>> 7d0b24e8856744cd3393a8d0230627656ab716f7
 
 
 </UL>
