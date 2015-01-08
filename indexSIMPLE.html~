@@ -1,0 +1,91 @@
+
+<!--
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+   <HEAD>
+         <TITLE>
+	          Small Hello
+		        </TITLE>
+			   </HEAD>
+			   <BODY>
+			      <H1>Hi</H1>
+			         <P>This is very minimal "hello world"
+HTML document.</P>
+</BODY>
+</HTML>
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+<link rel="SHORTCUT ICON" href="tudelft.png">
+<title>Abdul H. Sheikh. - TU Deft</title>
+
+<style type="text/css">
+                                 a{text-decoration:none}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table align="center" width="810">
+<tr>
+<td>
+<hr>
+<h1>Abdul H. Sheikh.</h1>
+<hr>
+<table>
+<tr>
+<td>PhD<br>
+	Scientific Computing group <br>
+	Delft Institute of Applied Mathematics DIAM <br>
+	Faculty of Electrical Engineering, Mathematics<br>
+	and Computer Science<br>
+	Delft University of Technology<br>
+<br>
+Tel. +31 015 27 81692 (Office)<br>
+<td></td>
+<td>Delft University of Technology<br>
+Faculty EWI<br>
+Mekelweg 4, room HB 03.150<br>
+2628 CD Delft<br>
+Delft, The Netherlands<br>
+<br>
+E-Mail: <a href=
+"mailto:A.H.Sheikh@tudelft.nl">A.H.Sheikh@tudelft.nl</a><br>
+</td>
+</tr>
+</table>
+<hr>
+<h2>Education:</h2>
+PhD. at Delft Institute of Applied Mathematics, Delft
+University of Technology (2009 - ).<br>.
+MPhil. 1 year Course work, Quaid-i-Azam University, Islamabad, Pakistan (2008).<br>
+MSc. Mathematics, Quaid-i-Azam University, Islamabad, Pakistan (2007).<br>
+BSc. Mathematics, Physics, Computer Science, SALU, Khairpur, Pakistan (2005).<br>
+<hr>
+</ul>
+<h2>Research:</h2>
+My daily supervisor is <a href="http://ta.twi.tudelft.nl/nw/users/domenico/">dr. Domenico Lahaye</a>, my interest is Numerical linear algebra in general, fast iterative solver for Helmholtz equation with application in Accoustics. <a href="http://ta.twi.tudelft.nl/nw/users/vuik/">Prof dr.ir. V Vuik</a> is my PhD promotor. 
+<hr>
+<h2>Publications:</h2>
+<ul>
+<li><font color="#003399"><i>On the Convergence of Shifted Laplace Preconditioner Combined with
+Multilevel Deflation,</i></font> .
+(with <a href=
+"http://ta.twi.tudelft.nl/nw/users/domenico/">D. Lahaye</a> and with <a href=
+"http://ta.twi.tudelft.nl/users/vuik/">C. Vuik</a> ) </li>
+
+<li><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">A.H. Sheikh ,D. Lahaye, and C. Vuik
+					<I> A scalable Hemholtz solver combining the shifted Laplace preconditioner with multigrid deflation</I>.
+					<I>DIAM Technical Report NW11-01</I>, Delft Institute of Applied Mathematics,
+					Delft University of Technology, 2011. <A HREF="htt;>//myreport_pdf.com">[PDF]</A>
+					.</P>
+</li>
+
+</ul>
+</tr>
+</table>
+</body>
+</html>

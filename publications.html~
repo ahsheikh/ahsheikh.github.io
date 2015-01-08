@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Publication page of AH Sheikh - TUDeft Homepage</TITLE>
+	<!--<TITLE>Yue Qiu - TUDeft Homepage</TITLE> -->
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.5  (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
+	<META NAME="CHANGED" CONTENT="20140219;19133700">
+	<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
+	<STYLE TYPE="text/css">
+	<!--
+		H1.cjk { font-family: "verdana" }
+		H1.ctl { font-family: "verdana" }
+		H2.cjk { font-family: "Droid Sans" }
+		H2.ctl { font-family: "FreeSans" }
+		A:link { color: #0000ff; text-decoration: none }
+		A:visited { color: #FF0000 }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" LINK="#0000ff" VLINK="#FF0000" BGCOLOR="#C7EDCC" DIR="LTR">
+				
+
+					
+					<H2 CLASS="western">PhD Thesis </H2>
+					<UL>		
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">
+					<I>Development of Helmholtz Solver Based on Shifted Laplace Preconditioner and a Multigrid Deflation Technique. </I>. Delft Institute of Applied Mathematics, Delft University of Technology, 2014. 
+					<A HREF="pubs/Abdul_Thesis_Final.pdf">[PDF]</A>
+					<!--<A HREF="pubs/MSSS_PDE_OPT_QIU_2013.pdf">[PDF]</A>-->
+					.</P>
+					
+					<!--<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">A.H. Sheikh ,D. Lahaye, and C. Vuik
+					<I> A scalable Hemholtz solver combining the shifted Laplace preconditioner with multigrid deflation</I>.
+					<I>DIAM Technical Report NW11-01</I>, Delft Institute of Applied Mathematics,
+					Delft University of Technology, 2011. <A HREF="pubs/She11LV.pdf">[PDF]</A>
+					<A HREF="bib/She11LVbibtex.bib">[Bibtex]</A>.</P>
+					-->					
+					</UL>
+					
+
+					 <H2 CLASS="western">Preprint Technical Reports:</H2>
+					<UL>		
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">
+					A.H. Sheikh ,D. Lahaye, and C. Vuik.
+					<I>Fast iterative solution methods for the Helmholtz equation</I>. <I>DIAM Technical Report NW09-11</I>, Delft Institute of Applied Mathematics, Delft University of Technology, 2009. 
+					<A HREF="https://ewi.tudelft.nl/fileadmin/Faculteit/EWI/Over_de_faculteit/Afdelingen/Applied_Mathematics/Rapporten/doc/NW09-11.pdf
+					">[PDF]</A>
+					<!--<A HREF="pubs/MSSS_PDE_OPT_QIU_2013.pdf">[PDF]</A>-->
+					<A HREF= "bib/report0911.bib">[Bibtex]</A>.</P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">A.H. Sheikh ,D. Lahaye, and C. Vuik
+					<I> A scalable Hemholtz solver combining the shifted Laplace preconditioner with multigrid deflation</I>.
+					<I>DIAM Technical Report NW11-01</I>, Delft Institute of Applied Mathematics,
+					Delft University of Technology, 2011. <A HREF="pubs/She11LV.pdf">[PDF]</A>
+					<A HREF="bib/She11LVbibtex.bib">[Bibtex]</A>.</P>
+										
+					</UL>
+					
+					
+					<H2 CLASS="western">Publications:</H2>
+					<UL>
+					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">A. H. Sheikh, D. Lahaye, and C. Vuik
+					<I> On the convergence of shifted Laplace preconditioner combined with multilevel deflation, Numerical Linear Algebra with Applications.  </I>. <I> Numerical Linear Algebra with Applications. Volume 20, Issue 4, August 2013 pp 645-662</I>, 
+					2014. <A HREF="pubs/Sheikh13LV_NLAA.pdf">[PDF]</A><A HREF="bib/Sheikh13LV_NLAA.bib">[Bibtex]</A>.</P>
+
+					 <LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">A. H. Sheikh, D. Lahaye, and C. Vuik
+					<I> Accelerating the Shifted Laplace Preconditioner for the Helmholtz Equation by Multigrid Deflation.  </I>. <I> Numerical Linear Algebra with Applications. Volume 20, Issue 4, August 2013 pp 645-662</I>, 
+					2014. <A HREF="pubs/Sheikh13LV_NLAA.pdf">[PDF]</A><A HREF="bib/Sheikh13LV_NLAA.bib">[Bibtex]</A>.</P>
+
+					<!--
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">Y. Qiu,
+					M.B. van Gijzen, J.W. van Wingerden, M. Verhaegen. <I>A Class of
+					Efficient Preconditioners with Multilevel Sequentially
+					Semiseparable Matrix Structure</I>. <I>AIP Conference Proceedings</I>,
+					vol: 1558, 2013. <A HREF="http://scitation.aip.org/content/aip/proceeding/aipcp/10.1063/1.4825988">[PDF]</A>
+					<A HREF="bib/MSSS_PRE_QIU_2013.bib">[Bibtex]</A>.</P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify" >Q. Sun, Y.
+					Qiu, J. Zhou, J. Yu. <A HREF="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5748911&amp;tag=1"><I>Observation
+					of Chaos in Smart Grid and Stabilization Condition via
+					Generalized Fuzzy Hyperbolic Model</I></A>. In <I>Proceedings of
+					the 2011 Asia-Pacific Power and Energy Engineering Conference</I>,
+					March 25-28, 2011. Wuhan, P.R.China.<A HREF="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5748911"> [PDF]</A>.</P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify" >Q. Sun, Y. Qiu, C. Wu, Y. Dong.
+					<I><A HREF="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4959321">The
+					Application of Iterative Metacognitive Theory in Electrical
+					Engineering Experiment Teaching</I></A>. In <I>Proceedings of the 2009
+					First International Workshop on Education Technology and
+					Computer Science</I>, March 7-8, 2009. Wuhan, P.R.China. <A HREF="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4959321"> [PDF]</A>.
+					</P>
+					-->
+					</UL>
+					</SPAN></SPAN>
+					</P>
+				
+				<H2 CLASS="western">Talks:</H2>
+				<H2 CLASS="western">Conference :</H2>
+				<UL>
+
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>Coarse-grid-correction preconditioner for the Helmholtz Equation. </I> <A HREF="http://metronu.ulb.ac.be/EMG2014/">2014 European Multigrid Conference</A>, September 09-12, 2014, Leuven, Belgium. <A HREF="talks/talk09september2014">[Slides]</A> <A HREF="abs/emg09sept14Leuven.pdf"> [Abstract]</A> 
+					</SPAN>
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>An Scalable Helmholtz Solver Combining the Shifted Laplace
+					Preconditioner With Multigrid Deflation.</I> <A HREF="http://www.cerfacs.fr/6-26925-Sparse-Days-2011.php">Sparse Days Meeting </A>,  September 06-07, 2011, <A HREF="http://www.cerfacs.fr/">CERFACS </A>, Tolouse France. <A HREF="talks/talk06september2011.pdf">[Slides]</A>.
+					</SPAN>		
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>A scalable Helmholtz solver combining the deflation with shifted Laplace preconditioner. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2011/">Fifteenth Copper Mountain Conference on MULTIGRID METHODS</A>, March 27 - 01 April 01, 2011, Colorado IL, USA. <A HREF="talks/Copper_Talk2011.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2011/abstract/sheik109177/"> [Abstract]</A>
+					</SPAN>
+					</P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>An efficient iterative scheme for the Helmholtz equation with deflation. </I> <A HREF="http://grandmaster.colorado.edu/~copper/2010/">Eleventh Copper Mountain Conference on ITERATIVE METHODS, April 04-09, 2010, Colorado IL, USA. </A>  <A HREF="talks/ECC_2014_slides_QIU.pdf">[Slides]</A> <A HREF="http://grandmaster.colorado.edu/~copper/2010/abstract/sheik112506/"> [Abstract]</A>
+					</SPAN>
+					</P>
+					      
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>Efficient Preconditioners with Multilevel Sequentially SemiSeparable Structure</I>. In the 11th International Conference on Numerical Analysis and Applied Mathematics (ICNAAM), September 21-27, 2013, Rhodos, Greece. <A HREF="talks/ICNAAM_2013_QIU.pdf">[Slides]</A>.
+					</SPAN>
+					</P>
+					
+					
+					</P>
+					
+					
+		
+				</UL>
+				
+				<H2 CLASS="western">Posters:</H2>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Fast iterative schemes for numerical solution of Helmholtz equation. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
+					<A HREF="http://wsc.project.cwi.nl/woudschoten/2009/conferentieE.php">The Thirty-fourth Woudschoten Conference, October 7-9, 2009.</A> Zeist, The Netherlands.<A  HREF="pos/PosWouds09.pdf">[PDF]</A> </SPAN></SPAN> </P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>On iterative solutions of Helmholtz equation. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In <A HREF="http://wsc.project.cwi.nl/woudschoten/2010/conferentieE.php">The Thirty-fifth Woudschoten Conference, October 6-8, 2010.</A> Zeist, The Netherlands.<A  HREF="pos/WSC_Poster_2010.pdf">[PDF]</A> </SPAN></SPAN> </P>
+
+
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>On convergence of shifted Laplace preconditioner combined with multigrid deflation. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In <A HREF="http://wsc.project.cwi.nl/woudschoten/2011/conferentieE.php">The Thirty-sixth Woudschoten Conference, October 5-7, 2011.</A> Zeist, The Netherlands.<A  HREF="pos/WSC_Poster_2011.pdf">[PDF]</A> </SPAN></SPAN> </P>
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Two-Level LFA Multilevel Helmholtz Solver. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In <A HREF="http://wsc.project.cwi.nl/woudschoten/2012/conferentieE.php">The Thirty-seventh Woudschoten Conference, October 3-5, 2012.</A> Zeist, The Netherlands.<A  HREF="pos/WSC_Poster_2012.pdf">[PDF]</A> </SPAN></SPAN> </P>
+
+
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>Identification
+					and Distributed Control of Large Scale Systems : an Application
+					to Wind Farm. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
+					<A HREF="http://www.lec.ethz.ch/phd-wind-seminar">8th PhD
+					Seminar on Wind Energy in Europe</A>, September 12 - 13, 2012.
+					ETH, Zurich, Switzerland. <A HREF="pos/EAWE_ETH_QIU_2012.pdf">[PDF]</A> </SPAN></SPAN></P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><I>On convergence of shifted Laplace preconditioner combined with multigrid deflation. </I><SPAN STYLE="font-variant: normal"><SPAN STYLE="font-style: normal">In
+					<A HREF="http://ta.twi.tudelft.nl/wagm/users/rojas/NLA2012/NLA2012.html">Symposium
+					on Numerical Linear Algebra - Algorithms, Applications, and
+					Training</A>, April 10-13, 2012. Delft, the Netherlands. <A HREF="pos/NLA_Delft_2012.pdf">[PDF]</A> 
+					
+					
+					</UL>
+					
+
+				<H2 CLASS="western">Others :</H2>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>More Insights into Deflation Preconditioner for Helmholtz Problem </I>. In the Group Talk of the Numerical Analysis Group, Delft Institute of Applied Mathematics, Delft University of Technology, June 06, 2014. <A HREF="talks/talk06june2014.pdf">[Slides]</A>.
+					</SPAN>
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<I>About Deflation Preconditioner for Helmholtz Problem </I>. In the Group Talk of the Numerical Analysis Group, Delft Institute of Applied Mathematics, Delft University of Technology, June 13, 2013. <A HREF="talks/talk13june2013.pdf">[Slides]</A>.
+					</SPAN>
+					
+										
+					
+					
+					</P>
+				</UL>
+				
+				
+				<H2 CLASS="western">Workshops:</H2>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<A HREF="http://nmc.wiskgenoot.nl/"><I>Het 50ste Nederlands Mathematisch Congres (NMC 2014)</I></A>, April 16-17, 2014, <A HREF="http://www.tudelft.nl/en/faculty/ud/page/13/">Delft University of Technology</A>, Delft, the Netherlands.
+					</SPAN>
+					</P>
+					
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<A HREF="http://fa.its.tudelft.nl/~groenevelt/swi/index.html"><I>Study Group Mathematics with Industry, </I></A>. January 27-31, 2014, <A HREF="http://www.ewi.tudelft.nl/en/">EEMCS Faculty</A>, TU Delft, Netherlands. Download Proceedings here <A HREF="http://fa.its.tudelft.nl/~groenevelt/swi/swi-2014-delft-proceedings">[1]</A> or <A HREF="pubs/swi-2014-delft-proceedings.pdf">[2]</A>
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<A HREF="http://www.cerfacs.fr/6-26925-Sparse-Days-2011.php/"><I>Sparse Days Meeting 2011 at CERFACS </I></A>. September 06-07, 2011, <A HREF="http://www.cerfacs.fr/">CERFACS</A>, Toulouse, France.
+					</SPAN>
+					</P>
+					
+
+					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify"><SPAN STYLE="font-style: normal">
+					<A HREF="http://www.utwente.nl/ewi/nmc2011/"><I>Nederlands Mathematisch Congres 2011, </I></A>. April 14-15, 2011, <A HREF="http://www.utwente.nl/">Universiteit Twente,</A>, Twente, Netherlands.
+					</SPAN>
+					</P>
+
+
+					</SPAN>
+					</P>					
+					</UL>
+					</SPAN></SPAN>
+					</P>
+				</UL>
+				
+			</TD>
+		</TR>
+	</TABLE>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>
+
+
+<hr>
+Back to
+<a href="http://ahsheikh.github.com">home page
+</a> of
+Abdul Hanan Sheikh<br><br>
