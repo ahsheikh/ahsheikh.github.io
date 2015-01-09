@@ -46,8 +46,7 @@
 					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">
 					A.H. Sheikh ,D. Lahaye, and C. Vuik.
 					<I>Fast iterative solution methods for the Helmholtz equation</I>. <I>DIAM Technical Report NW09-11</I>, Delft Institute of Applied Mathematics, Delft University of Technology, 2009. 
-					<A HREF="https://ewi.tudelft.nl/fileadmin/Faculteit/EWI/Over_de_faculteit/Afdelingen/Applied_Mathematics/Rapporten/doc/NW09-11.pdf
-					">[PDF]</A>
+					<A HREF="pubs/She09LV.pdf">[PDF]</A>
 					<!--<A HREF="pubs/MSSS_PDE_OPT_QIU_2013.pdf">[PDF]</A>-->
 					<A HREF= "bib/report0911.bib">[Bibtex]</A>.</P>
 					
@@ -66,9 +65,9 @@
 					<I> On the convergence of shifted Laplace preconditioner combined with multilevel deflation, Numerical Linear Algebra with Applications.  </I>. <I> Numerical Linear Algebra with Applications. Volume 20, Issue 4, August 2013 pp 645-662</I>, 
 					2014. <A HREF="pubs/Sheikh13LV_NLAA.pdf">[PDF]</A><A HREF="bib/Sheikh13LV_NLAA.bib">[Bibtex]</A>.</P>
 
-					 <LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">A. H. Sheikh, D. Lahaye, and C. Vuik
-					<I> Accelerating the Shifted Laplace Preconditioner for the Helmholtz Equation by Multigrid Deflation.  </I>. <I> Numerical Linear Algebra with Applications. Volume 20, Issue 4, August 2013 pp 645-662</I>, 
-					2014. <A HREF="pubs/Sheikh13LV_NLAA.pdf">[PDF]</A><A HREF="bib/Sheikh13LV_NLAA.bib">[Bibtex]</A>.</P>
+					 <LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%">A. H. Sheikh, D. Lahaye, and C. Vuik, L.G. Ramos and R. Nabben
+					<I> Accelerating the Shifted Laplace Preconditioner for the Helmholtz Equation by Multigrid Deflation.  </I>. <I> Submitted</I>, 
+					2014. </P>
 
 					<!--
 					<LI><P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">Y. Qiu,
