@@ -1,0 +1,10 @@
+    \documentclass{article}
+    \usepackage{pdfpages}
+    \begin{document}
+     Computational Methods for Electrixcal Engineering. 
+     
+     Dr. Abdul Hanan Sheikh
+    \includepdfmerge{Part1.pdf,2-	}
+%     \includepdfmerge{quest_report_date_corrected.pdf,2-5}
+%     \includepdfmerge{ExtraSheetforProgressReport.pdf,-}
+    \end{document}
