@@ -21,11 +21,48 @@ A:visited { color: #FF0000 }
 </HEAD>
 <BODY LANG="en-US" LINK="#0000ff" VLINK="#FF0000" BGCOLOR="#D8E6FF" DIR="LTR"> <!--#FFFFDE -->
 <H2 CLASS="western">History of courses taught and currently teaching</H2>
-This page facilitates the students of the course with Lecture materials and assignments etc.
+This page enlists the courses, their description and supplied material for the courses. 
+
+
+				<H2 CLASS="western">Current Courses:</H2>
+<H3 CLASS="western">Graduate Courses:</H3>				
 <UL>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="LectureNotes.html">Lecture Notes. </A>
-<!--<A HREF="bib/MSSS_toolbox.bib">[Bibtex]</A>.</P> -->
+				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				<A HREF="NumMod/NumMod.html"> Numerical Modeling and Simulations for Energy and Environment Engineering.</A> </P>
+<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				<A HREF="CompMethods/CompMethods.html"> Computational Methods for Electrical Engineering.</A> </P>				
 </UL>
+<H3 CLASS="western">Undergraduate Courses:</H3>				
+<UL>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				<A HREF="NA/NumAnalysis.html"> Numerical Analysis.</A> </P>				
+</UL>
+				<H2 CLASS="western">Past Courses:</H2>
+<H3 CLASS="western">Graduate Courses:</H3>
+				I taught following courses to Graduate students at <A HREF="http://www.quest.edu.pk//"> QUEST, Nawabshah.</A> 
+				<UL>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				<A HREF="FPT/FixedPointTh.html"> Fixed Point Theory.</A> </P>	
+				</UL>
+<H3 CLASS="western">Undergraduate Courses:</H3>
+<UL>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				<A HREF="CAAG/CAAG.html"> Calculus and Analytical Geometry.</A> </P>
+<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				<A HREF="MT/MeasureTh.html"> Measure Theory.</A> </P>				
+</UL>
+
+				and I taught following courses to undergraduate engineering students at <A HREF="http://www.neduet.edu.pk//"> NED Universityof Engg. and Tech. Karachi, Pakistan.</A> 
+				<UL>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				Linear Algebra and Differential Equation (2008-2009)</P>
+				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
+				Advance Calculus (2008-2009).</P>
+				</UL>
+
+
+
+
 </SPAN></SPAN>
 </P>
 </SPAN></SPAN>
