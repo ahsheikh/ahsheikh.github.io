@@ -117,24 +117,23 @@
 <h6>This is heading 6</h6>                        -->
 				<HR>
 				<H1 CLASS="western"><u>Activities </u></H1>
-				<H3 CLASS="western">Research: </H3>
+				<H2 CLASS="western">Research: </H2>
 				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">I am working as Ph.D fellow in Numerical Analysis group in <A HREF="http://www.ewi.tudelft.nl/en/the-faculty/departments/applied-mathematics/">Delft
 				Institute of Applied Mathematics (DIAM)</A> from March 2009. My
 				research intrest is in numerical linear algebra in general,
 				iterative solvers for PDEs in particular. Recently I have worked on developing robust and fast solvers for the Helmholtz equation, which involves the CSLP preconditioners and a variety of &quot;deflation preconditioners&quot;. 
 				I am working under supervision of associate professor<A HREF="http://ta.twi.tudelft.nl/nw/users/domenico/">
-				dr.ir. Domenico Lahaye </A>, where as my promotor is <A HREF="http://ta.twi.tudelft.nl/users/vuik//"> Prof. dr. ir C. Vuik.<A 
-				</P>
+				dr.ir. Domenico Lahaye </A>, where as my promotor is <A HREF="http://ta.twi.tudelft.nl/users/vuik//"> Prof. dr. ir C. Vuik.<A> 
+				
+				<H2 CLASS="western">Teaching:</H2>
+For the list of previous and current courses, <A HREF="Courses/Teaching.html">Click here</A>
 				<HR>
-				<H1 CLASS="western">Teaching:</H1>
-For the list of previous and current courses,<A HREF="Courses/Teaching.html">Click here</A>
-				<HR>
-				<H3 CLASS="western">Publications:</H3>
+				<H1 CLASS="western">Publications:</H1>
 				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
 				<A HREF="publications.html">Check here for list of publications</A>
 				</P>
 <HR>
-				<H3 CLASS="western">Software:</H3>
+				<H1 CLASS="western">Software:</H1>
 				<P STYLE="margin-bottom: 0in; line-height: 150%" ALIGN="justify">
 				<A HREF="software.html">Click here for software packages</A>
 				</P>
