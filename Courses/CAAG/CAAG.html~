@@ -24,14 +24,19 @@ A:visited { color: #FF0000 }
 This page facilitates the students of the course with Lecture materials and assignments etc.
 <H2 CLASS="western">Assignemnts:</H2>
 <UL>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG1.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG2.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG3.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG4.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG5.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG6.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG7.pdf">Lecture Notes. </A>
-<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="MainG8.pdf">Lecture Notes. </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG1.pdf">Group 1 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG2.pdf">Group 2 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG3.pdf">Group 3 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG4.pdf">Group 4 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG5.pdf">Group 5 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG6.pdf">Group 6 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG7.pdf">Group 7 </A>
+<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="mainG8.pdf">Group 8 </A>
+</UL>
+
+
+<H2 CLASS="western">Lecture Notes</H2>
+<UL>
 <LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="LectureNotes.html">Lecture Notes. </A>
 <!--<A HREF="bib/MSSS_toolbox.bib">[Bibtex]</A>.</P> -->
 </UL>
