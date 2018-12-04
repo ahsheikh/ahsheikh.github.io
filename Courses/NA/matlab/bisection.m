@@ -1,4 +1,4 @@
-function p = bisection(f,a,b)
+function p = bisection(f,a,b, iter, tol)
 
 % provide the equation you want to solve with R.H.S = 0 form. 
 % Write the L.H.S by using inline function
@@ -7,11 +7,14 @@ function p = bisection(f,a,b)
 % A very simple code. But may come handy
 
 if f(a)*f(b)>0 
-    disp('Wrong choice bro')
+    disp('Wrong choice !! ')
 else
     p = (a + b)/2;
     err = abs(f(p));
-    while err > 1e-3
+    n = 1; 
+%     while err > tol
+while ( err > tol && n < iter )
+        n = n+1;
    if f(a)*f(p)<0 
        b = p;
    else
