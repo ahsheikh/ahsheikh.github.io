@@ -1,22 +1,19 @@
-
-clc 
-clear all
-close all
-format short 
-
-
 % Given function 
 f=@(x) x.^3 - 2*(x.^2) + 4*x + 1;
 %initial guesses and accuracy
 a = 2;
 b = 4;
 tol = 10^-3;       % setting error tolerance correct to 4 decimal places
+root = regulafalsi1(f,a,b,tol);
 
-
-    
+function root = regulafalsi1(f,a,b,tolerance)
+if (nargin < 3)
+    error('Wrong number of input arguments');
+elseif (nargin == 3 || nargin == 4)
     i = 0;
+    tol = 1e-6;
     g = 1;
-    disp('Iteration       a          b          x_i          f(a)          f(b)             f(x_i)');
+    disp('Iteration       a          b          x          f(a)          f(b)             f(c)');
     disp('=========    =======    =======    =======    ==========    ==========       ========');
     while(g > tol)
         i = i + 1;
@@ -39,6 +36,7 @@ tol = 10^-3;       % setting error tolerance correct to 4 decimal places
             root = a;
         end
         fprintf('%3d%17.4f%11.4f%11.4f%14.4f%14.4f%14.4f\n', i,a,b,c,f(a),f(b),f(c));
-    end
-        
-    
+        end
+    elseif (nargin > 4)
+    error('Too many input arguments');
+end

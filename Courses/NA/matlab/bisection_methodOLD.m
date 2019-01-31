@@ -5,7 +5,6 @@ close all
 format short 
 % Given function
 f=@(x)x-x.*log(x);
-
 % ploting the given function to find the convergence interval
 x=-10:0.01:10;
 plot(x,f(x),'.')
@@ -15,23 +14,16 @@ plot(0.*x,x,'r')
 axis([-10 10 -10 10])
 grid on
 
-%initial guesses and accuracy
-a = 2;
-b = 4;
-tol = 10^-4;       % setting error tolerance correct to 4 decimal places
-
-
-
+%initial guesses
+a=2;
+b=4;
 f_a=f(a);
 f_b=f(b);
 % working principle of bisection method
 if f_a*f_b>0, error('We must have f(a)f(b)<0!'); end
+tol=1e-6;       % setting error tolerance
 err=abs(b-a);    % initial error
    iter=0;       % start iterations
-   
-   
-   
-   
    while err>tol
    iter=iter+1;
    m=(a+b)/2;
@@ -43,7 +35,7 @@ err=abs(b-a);    % initial error
  else
      b=m;
  end
-   end
    
-   iterations=iter
+   end
+   Iterations=iter
    root=b

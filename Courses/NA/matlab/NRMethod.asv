@@ -20,7 +20,7 @@ grid on
 
 %initial guesses and accuracy
 x(1) =  1;              % initial guess
-error = 10^-3;          % accuracy till 3 decimal places
+error = 10
 
 
 % iterations 
