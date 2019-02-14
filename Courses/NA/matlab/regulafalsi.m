@@ -17,7 +17,7 @@ tol = 10^-3;       % setting error tolerance correct to 4 decimal places
     i = 0;
     g = 1;
     disp('Iteration       a          b          x_i          f(a)          f(b)             f(x_i)');
-    disp('=========    =======    =======    =======    ==========    ==========       ========');
+    disp('=========    =======    =======     =======    ==========    ==========       ========');
     while(g > tol)
         i = i + 1;
         if (f(a) == f(b))
