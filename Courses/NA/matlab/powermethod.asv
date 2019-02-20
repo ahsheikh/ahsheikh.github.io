@@ -1,0 +1,23 @@
+
+
+clear all 
+clc
+        
+
+A=[0 11 -5; -2 17 -71 2 0 ; -2 1 2; 1 3 1];              % provide matrix
+v = ones(length(A),1);                  % Initial eigenvector, ones vector 
+iter = 100;                              % number of iterations
+
+
+
+  for i=1:iter
+% ischar(S) returns 1 if S is character array: 0 Otherwise
+    if ischar(A) 
+      v=eval([A,'(v)']);
+    else
+      v=A*v;
+    end
+    v=v/norm(v);
+  end
+
+return
