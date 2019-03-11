@@ -15,8 +15,10 @@ u= zeros(length(b),1);  % Initial guess, zero vector
 L=tril(A,-1);
 U=triu(A,1);
 D=diag(diag(A));
+
+
 for i=1:iter
-    I=eye(2);
+%      I=eye(2);
 u(:,i+1)=inv(D+L)*(b-U*u(:,i));
 end
 
