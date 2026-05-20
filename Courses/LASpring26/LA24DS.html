@@ -1,244 +1,70 @@
-# Updated HTML Code for Linear Algebra Course Page
+<!-- Add this inside <div class="content-grid"> after Problem Sheets section -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linear Algebra - 24 DS - Spring 2026</title>
+<div class="section-box">
+    <details open>
+        <summary>Quizzes</summary>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
+        <ul>
 
-        header {
-            background: #1f3c88;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
+            <li>
+                <a href="quizzes/Quiz1_24DS.pdf" download>
+                    1. Quiz 1
+                </a>
+            </li>
 
-        .container {
-            width: 90%;
-            margin: 30px auto;
-        }
+            <li>
+                <a href="quizzes/Quiz2_24DS.pdf" download>
+                    2. Quiz 2
+                </a>
+            </li>
 
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
+            <li>
+                <a href="quizzes/Quiz3_24DS.pdf" download>
+                    3. Quiz 3
+                </a>
+            </li>
 
-        .section-box {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+            <li>
+                <a href="quizzes/Quiz4_24DS.pdf" download>
+                    4. Quiz 4
+                </a>
+            </li>
 
-        @media (max-width: 900px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        h2 {
-            color: #1f3c88;
-            margin-top: 35px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 12px 0;
-            padding: 12px;
-            background: #eef2ff;
-            border-radius: 6px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #0b57d0;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        summary {
-            font-size: 24px;
-            font-weight: bold;
-            color: #1f3c88;
-            cursor: pointer;
-            margin-bottom: 20px;
-            outline: none;
-        }
-
-        details {
-            width: 100%;
-        }
-
-        details[open] summary {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            color: #666;
-            font-size: 14px;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>Linear Algebra</h1>
-    <h3>24 DS Batch — Spring 2026</h3>
-</header>
-
-<div class="container">
-
-    <div class="content-grid">
-
-        <div class="section-box">
-            <details open>
-                <summary>Lecture Slides</summary>
-
-                <ul>
-                    <li>
-                        <a href="slides/1_A_intro_sim_lin_eq.pdf" download>
-                            1. Introduction to Simultaneous Linear Equations
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/1_Matrices_intro.pdf" download>
-                            2. Introduction to Matrices
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/2_row_op_RREF_rank.pdf" download>
-                            3. Row Operations, REF, RREF and Rank
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/3_solving_LS_diff_methods.pdf" download>
-                            4. Solving Linear Systems using Different Methods
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/4_det_solving_ls_using_row_op.pdf" download>
-                            5. Determinants and Solving Linear Systems
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/5_LU_Decomposition.pdf" download>
-                            6. LU Decomposition
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/6_vector_spaces_lc.pdf" download>
-                            7. Vector Spaces and Linear Combination
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/7_LC_spanning_detailed.pdf" download>
-                            8. Linear Combination and Spanning
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="slides/8_SubSpace_LinInd.pdf" download>
-                            9. Subspaces and Linear Independence
-                        </a>
-                    </li>
-                </ul>
-            </details>
-        </div>
-
-
-        <div class="section-box">
-            <details open>
-                <summary>Problem Sheets</summary>
-
-                <ul>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Matrices.pdf" download>
-                            1. Problem Sheet — Matrices
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Cramer_Substitution_Elimination.pdf" download>
-                            2. Problem Sheet — Cramer, Substitution and Elimination Methods
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_REF_RREF_inv_using_row_oop.pdf" download>
-                            3. Problem Sheet — REF, RREF and Inverse using Row Operations
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_lin_ind_spaning_LC.pdf" download>
-                            4. Problem Sheet — Linear Independence, Spanning and Linear Combination
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Chnge_bases_col_Row_Null_Space.pdf" download>
-                            5. Problem Sheet — Change of Bases, Column Space, Row Space and Null Space
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_LT_Their_Matrices.pdf" download>
-                            6. Problem Sheet — Linear Transformations and Their Matrices
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Eval_Electors_Diagonalization.pdf" download>
-                            7. Problem Sheet — Eigenvalues, Eigenvectors and Diagonalization
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Ortho_LeastSquare.pdf" download>
-                            8. Problem Sheet — Orthogonality and Least Squares
-                        </a>
-                    </li>
-
-                </ul>
-            </details>
-        </div>
-
-    </div>
-
+        </ul>
+    </details>
 </div>
 
-<footer>
-    © AHS 2026 | Linear Algebra Course
-</footer>
 
-</body>
-</html>
+<div class="section-box">
+    <details open>
+        <summary>Assignments</summary>
+
+        <ul>
+
+            <li>
+                <a href="assignments/Assignment1_24DS.pdf" download>
+                    1. Assignment 1
+                </a>
+            </li>
+
+            <li>
+                <a href="assignments/Assignment2_24DS.pdf" download>
+                    2. Assignment 2
+                </a>
+            </li>
+
+            <li>
+                <a href="assignments/Assignment3_24DS.pdf" download>
+                    3. Assignment 3
+                </a>
+            </li>
+
+            <li>
+                <a href="assignments/Assignment4_24DS.pdf" download>
+                    4. Assignment 4
+                </a>
+            </li>
+
+        </ul>
+    </details>
+</div>
