@@ -6,103 +6,186 @@
     <title>Linear Algebra - 24 DS - Spring 2026</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            margin: 0;
-            padding: 0;
+
+        *{
+            box-sizing: border-box;
         }
 
-        header {
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        /* TOP HEADER */
+
+        header{
             background: #1f3c88;
             color: white;
-            padding: 30px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header h3{
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        /* MAIN LAYOUT */
+
+        .main-container{
+            display: flex;
+            min-height: calc(100vh - 120px);
+        }
+
+        /* LEFT MENU PANEL */
+
+        .left-panel{
+            width: 320px;
+            background: #ffffff;
+            border-right: 1px solid #ddd;
+            padding: 20px 15px;
+        }
+
+        .menu-title{
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f3c88;
+            margin-bottom: 25px;
             text-align: center;
         }
 
-        .container {
-            width: 90%;
-            margin: 30px auto;
+        details{
+            margin-bottom: 15px;
+            background: #eef2ff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #d5def7;
         }
 
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
+        summary{
+            padding: 16px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1f3c88;
+            list-style: none;
         }
 
-        .section-box {
+        summary:hover{
+            background: #dce5ff;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0 12px 12px 12px;
+        }
+
+        li{
             background: white;
-            padding: 25px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #0b57d0;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        /* RIGHT CONTENT AREA */
+
+        .right-panel{
+            flex: 1;
+            padding: 40px;
+        }
+
+        .content-box{
+            background: white;
+            padding: 35px;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        @media (max-width: 900px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 12px 0;
-            padding: 12px;
-            background: #eef2ff;
-            border-radius: 6px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #0b57d0;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        summary {
-            font-size: 24px;
-            font-weight: bold;
+        .content-box h2{
             color: #1f3c88;
-            cursor: pointer;
-            margin-bottom: 20px;
-            outline: none;
+            margin-top: 0;
         }
 
-        details {
-            width: 100%;
+        .content-box p{
+            line-height: 1.7;
+            color: #444;
+            font-size: 17px;
         }
 
-        details[open] summary {
-            margin-bottom: 20px;
+        .content-box ul{
+            margin-top: 15px;
+            padding-left: 20px;
         }
 
-        .bottom-links {
-            margin-top: 40px;
-            text-align: center;
+        .content-box li{
+            background: none;
+            padding: 5px 0;
+            margin: 0;
+        }
+
+        /* BOTTOM LINKS */
+
+        .bottom-links{
+            margin-top: 30px;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        .bottom-links p {
+        .bottom-links p{
             margin: 10px 0;
             font-size: 16px;
         }
 
-        footer {
+        /* FOOTER */
+
+        footer{
             text-align: center;
             padding: 15px;
+            background: #f4f6f9;
             color: #666;
             font-size: 14px;
         }
+
+        /* MOBILE */
+
+        @media(max-width: 900px){
+
+            .main-container{
+                flex-direction: column;
+            }
+
+            .left-panel{
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .right-panel{
+                padding: 20px;
+            }
+        }
+
     </style>
 </head>
 
@@ -113,229 +196,271 @@
     <h3>24 DS Batch — Spring 2026</h3>
 </header>
 
-<div class="container">
 
-    <div class="content-grid">
+<div class="main-container">
+
+    <!-- LEFT SIDEBAR MENU -->
+
+    <div class="left-panel">
+
+        <div class="menu-title">
+            Course Menu
+        </div>
+
 
         <!-- Lecture Slides -->
-        <div class="section-box">
-            <details closed>
-                <summary>Lecture Slides</summary>
 
-                <ul>
+        <details>
+            <summary>Lecture Slides</summary>
 
-                    <li>
-                        <a href="slides/1_A_intro_sim_lin_eq.pdf" download>
-                            1. Introduction to Simultaneous Linear Equations
-                        </a>
-                    </li>
+            <ul>
 
-                    <li>
-                        <a href="slides/1_Matrices_intro.pdf" download>
-                            2. Introduction to Matrices
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/1_A_intro_sim_lin_eq.pdf" download>
+                        1. Introduction to Simultaneous Linear Equations
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/2_row_op_RREF_rank.pdf" download>
-                            3. Row Operations, REF, RREF and Rank
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/1_Matrices_intro.pdf" download>
+                        2. Introduction to Matrices
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/3_solving_LS_diff_methods.pdf" download>
-                            4. Solving Linear Systems using Different Methods
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/2_row_op_RREF_rank.pdf" download>
+                        3. Row Operations, REF, RREF and Rank
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/4_det_solving_ls_using_row_op.pdf" download>
-                            5. Determinants and Solving Linear Systems
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/3_solving_LS_diff_methods.pdf" download>
+                        4. Solving Linear Systems using Different Methods
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/5_LU_Decomposition.pdf" download>
-                            6. LU Decomposition
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/4_det_solving_ls_using_row_op.pdf" download>
+                        5. Determinants and Solving Linear Systems
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/6_vector_spaces_lc.pdf" download>
-                            7. Vector Spaces and Linear Combination
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/5_LU_Decomposition.pdf" download>
+                        6. LU Decomposition
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/7_LC_spanning_detailed.pdf" download>
-                            8. Linear Combination and Spanning
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/6_vector_spaces_lc.pdf" download>
+                        7. Vector Spaces and Linear Combination
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="slides/8_SubSpace_LinInd.pdf" download>
-                            9. Subspaces and Linear Independence
-                        </a>
-                    </li>
+                <li>
+                    <a href="slides/7_LC_spanning_detailed.pdf" download>
+                        8. Linear Combination and Spanning
+                    </a>
+                </li>
 
-                </ul>
-            </details>
-        </div>
+                <li>
+                    <a href="slides/8_SubSpace_LinInd.pdf" download>
+                        9. Subspaces and Linear Independence
+                    </a>
+                </li>
+
+            </ul>
+        </details>
 
 
         <!-- Problem Sheets -->
-        <div class="section-box">
-            <details closed>
-                <summary>Problem Sheets</summary>
 
-                <ul>
+        <details>
+            <summary>Problem Sheets</summary>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Matrices.pdf" download>
-                            1. Matrices
-                        </a>
-                    </li>
+            <ul>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Cramer_Substitution_Elimination.pdf" download>
-                            2. Cramer, Substitution and Elimination Methods
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_Matrices.pdf" download>
+                        1. Matrices
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_REF_RREF_inv_using_row_oop.pdf" download>
-                            3. REF, RREF and Inverse using Row Operations
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_Cramer_Substitution_Elimination.pdf" download>
+                        2. Cramer, Substitution and Elimination Methods
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_lin_ind_spaning_LC.pdf" download>
-                            4. Linear Independence, Spanning and Linear Combination
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_REF_RREF_inv_using_row_oop.pdf" download>
+                        3. REF, RREF and Inverse using Row Operations
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Chnge_bases_col_Row_Null_Space.pdf" download>
-                            5. Change of Bases, Column Space, Row Space and Null Space
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_lin_ind_spaning_LC.pdf" download>
+                        4. Linear Independence, Spanning and Linear Combination
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_LT_Their_Matrices.pdf" download>
-                            6. Linear Transformations and Their Matrices
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_Chnge_bases_col_Row_Null_Space.pdf" download>
+                        5. Change of Bases, Column Space, Row Space and Null Space
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Eval_Electors_Diagonalization.pdf" download>
-                            7. Eigenvalues, Eigenvectors and Diagonalization
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_LT_Their_Matrices.pdf" download>
+                        6. Linear Transformations and Their Matrices
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="problemsheets/ProblemSheet_Ortho_LeastSquare.pdf" download>
-                            8. Orthogonality and Least Squares
-                        </a>
-                    </li>
+                <li>
+                    <a href="problemsheets/ProblemSheet_Eval_Electors_Diagonalization.pdf" download>
+                        7. Eigenvalues, Eigenvectors and Diagonalization
+                    </a>
+                </li>
 
-                </ul>
-            </details>
-        </div>
+                <li>
+                    <a href="problemsheets/ProblemSheet_Ortho_LeastSquare.pdf" download>
+                        8. Orthogonality and Least Squares
+                    </a>
+                </li>
+
+            </ul>
+        </details>
 
 
         <!-- Quizzes -->
-        <div class="section-box">
-            <details closed>
-                <summary>Quizzes</summary>
 
-                <ul>
+        <details>
+            <summary>Quizzes</summary>
 
-                    <li>
-                        <a href="quizzes/Quiz1_24DS.pdf" download>
-                            1. Quiz 1
-                        </a>
-                    </li>
+            <ul>
 
-                    <li>
-                        <a href="quizzes/Quiz2_24DS.pdf" download>
-                            2. Quiz 2
-                        </a>
-                    </li>
+                <li>
+                    <a href="quizzes/Quiz1_24DS.pdf" download>
+                        1. Quiz 1
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="quizzes/Quiz3_24DS.pdf" download>
-                            3. Quiz 3
-                        </a>
-                    </li>
+                <li>
+                    <a href="quizzes/Quiz2_24DS.pdf" download>
+                        2. Quiz 2
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="quizzes/Quiz4_24DS.pdf" download>
-                            4. Quiz 4
-                        </a>
-                    </li>
+                <li>
+                    <a href="quizzes/Quiz3_24DS.pdf" download>
+                        3. Quiz 3
+                    </a>
+                </li>
 
-                </ul>
-            </details>
-        </div>
+                <li>
+                    <a href="quizzes/Quiz4_24DS.pdf" download>
+                        4. Quiz 4
+                    </a>
+                </li>
+
+            </ul>
+        </details>
 
 
         <!-- Assignments -->
-        <div class="section-box">
-            <details closed>
-                <summary>Assignments</summary>
 
-                <ul>
+        <details>
+            <summary>Assignments</summary>
 
-                    <li>
-                        <a href="assignments/Assignment1_24DS.pdf" download>
-                            1. Assignment 1
-                        </a>
-                    </li>
+            <ul>
 
-                    <li>
-                        <a href="assignments/Assignment2_24DS.pdf" download>
-                            2. Assignment 2
-                        </a>
-                    </li>
+                <li>
+                    <a href="assignments/Assignment1_24DS.pdf" download>
+                        1. Assignment 1
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="assignments/Assignment3_24DS.pdf" download>
-                            3. Assignment 3
-                        </a>
-                    </li>
+                <li>
+                    <a href="assignments/Assignment2_24DS.pdf" download>
+                        2. Assignment 2
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="assignments/Assignment4_24DS.pdf" download>
-                            4. Assignment 4
-                        </a>
-                    </li>
+                <li>
+                    <a href="assignments/Assignment3_24DS.pdf" download>
+                        3. Assignment 3
+                    </a>
+                </li>
 
-                </ul>
-            </details>
-        </div>
+                <li>
+                    <a href="assignments/Assignment4_24DS.pdf" download>
+                        4. Assignment 4
+                    </a>
+                </li>
+
+            </ul>
+        </details>
 
     </div>
 
 
-    <!-- Bottom Navigation Links -->
-<hr>
+    <!-- RIGHT CONTENT -->
 
-        <p>
-            Back to:
-            <a href="https://ahsheikh.github.io/" target="_blank">
-                Homepage of Abdul Hanan Sheikh
-            </a>
-        </p>
+    <div class="right-panel">
 
-        <p>
-            Back to`:
-            <a href="https://ahsheikh.github.io/Courses/Teaching.html" target="_blank">
-                Teaching page of Abdul Hanan Sheikh
-            </a>
-        </p>
+        <div class="content-box">
 
+            <h2>Welcome to Linear Algebra</h2>
+
+            <p>
+                This course portal contains lecture slides, problem sheets,
+                quizzes, and assignments for the
+                <strong>24 DS Batch</strong> during the
+                <strong>Spring 2026</strong> semester.
+            </p>
+
+            <p>
+                Use the navigation menu on the left side to access downloadable course material.
+            </p>
+
+            <p>
+                Course contents include:
+            </p>
+
+            <ul>
+                <li>Lecture Slides</li>
+                <li>Problem Sheets</li>
+                <li>Quizzes</li>
+                <li>Assignments</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Bottom Links -->
+
+        <div class="bottom-links">
+
+            <p>
+                Back to:
+                <a href="https://ahsheikh.github.io/" target="_blank">
+                    Homepage of Abdul Hanan Sheikh
+                </a>
+            </p>
+
+            <p>
+                Back to:
+                <a href="https://ahsheikh.github.io/Courses/Teaching.html" target="_blank">
+                    Teaching Page of Abdul Hanan Sheikh
+                </a>
+            </p>
+
+        </div>
+
+    </div>
 
 </div>
+
 
 <footer>
     © AHS 2026 | Linear Algebra Course
