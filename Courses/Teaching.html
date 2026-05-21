@@ -1,102 +1,460 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-<TITLE>Page of previous and current courses - QUEST, Nawabshah Pakistan</TITLE>
-<META NAME="GENERATOR" CONTENT="LibreOffice 3.5 (Linux)">
-<META NAME="CREATED" CONTENT="0;0">
-<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
-<META NAME="CHANGED" CONTENT="20140219;19133700">
-<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
-<STYLE TYPE="text/css">
+<link rel="icon" type="image/png" sizes="32x32" href="quest.png">
 
-</STYLE>
-</HEAD>
-<BODY LANG="en-US" LINK="#0000ff" VLINK="#FF0000" BGCOLOR="#D8E6FF" DIR="LTR"> <!--#FFFFDE -->
-<H2 CLASS="western">Courses</H2>
-You can find courses currently I am teaching and course I taught.  
-<H2 CLASS="western">Current Courses:</H2>
-<H3 CLASS="western">At Graduate Level:</H3>				
-<UL> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - Abdul Hanan Sheikh</title>
 
-</UL>
-<H3 CLASS="western">At Undergraduate Level:</H3>				
-<UL> 
-	<LI><P STYLE="margin-bottom: 0in; line-height: 24pt"> <A HREF="PreCal/PreCal.html"> Pre Calculus - I</A>  </UL>
- <LI><P STYLE="margin-bottom: 0in; line-height: 24pt"> <A HREF="LASpring26/LA24DS.html"> Linear Algebra for Data Science</A> <LI><P STYLE="margin-bottom: 0in; line-height: 24pt"> </UL>
-<UL>
-	<H2 CLASS="western">Past Courses:</H2>
-<H3 CLASS="western">At Graduate Level:</H3>
-I taught following courses to Graduate students at <A HREF="http://www.quest.edu.pk//"> QUEST, Nawabshah.</A> 
-<UL>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">	
-<A HREF="MG/mgmethods.html"> Advanced Numerical Analysis </A> </P>	
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="MG/mgmethods.html"> Multigrid Methods </A> </P>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="FPT/FixedPointTh.html"> Fixed Point Theory.</A> </P>	
-<A HREF="NumMod/NumMod.html"> Numerical Modeling and Simulations for Energy and Environment Engineering.</A> </P>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="CompMethods/CompMethods.html"> Computational Methods for Electrical Engineering.</A> </P>
-</UL>
-<H3 CLASS="western">At Undergraduate Level:</H3>
-<UL>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-				<A HREF="DiscStruc/DS.html"> Discrete Structures </A>
-				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-				<A HREF="BusiMaths/BusiMaths.html"> Business Mathematics</A> </P>
-				<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-				<A HREF="SI/SI.html">Statistics</A> </P>	
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="Cal1/Cal1.html"> Calculus (I)</A>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="NA/NumAnalysis.html"> Numerical Analysis</A> </P>
-<A HREF="QBA/qba.html"> Quantative Business Analytics</A>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="TensorAnalysis/tensoranalysis.html"> Tensor Analysis </A> </P>
-				
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A Chemical Engineering HREF="NA/NACA.html"> Numerical Analysis with Computer Applications (NACA)</A> </P>	
-					
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="CAAG/CAAG.html"> Calculus and Analytical Geometry.</A> </P>
-				
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="MT/MeasureTh.html"> Measure Theory.</A> </P>	
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="LinAlg/LinAlg.html"> Linear Algebra </A> </P>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-<A HREF="EnggEco/EnggEco.html"> Engineering Economics </A> </P>			
-</UL>
-and I taught following courses to undergraduate engineering students at <A HREF="http://www.neduet.edu.pk//"> NED University of Engineering and Technology,</A> Karachi, Pakistan. 
-<UL>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-Linear Algebra and Differential Equation (2008-2009)</P>
-<LI><P STYLE="margin-bottom: 0in; line-height: 24pt">
-Advance Calculus (2008-2009).</P>
-</UL>
-<hr>
-Back to
-<a href="http://ahsheikh.github.io">home page
-</a> of
-Abdul Hanan Sheikh<br><br>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* TOP HEADER */
+
+        header{
+            background: linear-gradient(135deg, #1f3c88 0%, #2d5aa8 100%);
+            color: white;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        header h1{
+            margin: 0;
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header h3{
+            margin-top: 8px;
+            font-weight: 400;
+            opacity: 0.95;
+            font-size: 16px;
+        }
+
+        /* MAIN LAYOUT */
+
+        .main-container{
+            display: flex;
+            min-height: calc(100vh - 130px);
+        }
+
+        /* LEFT MENU PANEL */
+
+        .left-panel{
+            width: 280px;
+            background: #ffffff;
+            border-right: 1px solid #e0e6f2;
+            padding: 25px 0;
+            overflow-y: auto;
+        }
+
+        .menu-title{
+            font-size: 20px;
+            font-weight: 700;
+            color: #1f3c88;
+            margin: 0 0 20px 0;
+            padding: 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 13px;
+        }
+
+        .menu-section{
+            margin-bottom: 8px;
+        }
+
+        .menu-section-header{
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1f3c88;
+            user-select: none;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-section-header:hover{
+            background: #f0f4ff;
+            padding-left: 24px;
+        }
+
+        .menu-section-header.active{
+            background: #e8f0ff;
+            border-left: 4px solid #1f3c88;
+            padding-left: 16px;
+        }
+
+        .arrow-icon{
+            font-size: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .menu-section-header.expanded .arrow-icon{
+            transform: rotate(90deg);
+        }
+
+        .menu-items{
+            max-height: 1000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .menu-items.collapsed{
+            max-height: 0;
+            opacity: 0;
+        }
+
+        .menu-item{
+            background: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .menu-item a{
+            display: block;
+            padding: 10px 20px 10px 40px;
+            text-decoration: none;
+            color: #0b57d0;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-left: 3px solid transparent;
+        }
+
+        .menu-item a:hover{
+            background: #f9fbff;
+            border-left-color: #0b57d0;
+            padding-left: 44px;
+        }
+
+        .menu-item a.active{
+            background: #e8f0ff;
+            border-left-color: #0b57d0;
+            color: #0b57d0;
+            font-weight: 600;
+        }
+
+        /* RIGHT CONTENT AREA */
+
+        .right-panel{
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .content-box{
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .content-box h2{
+            color: #1f3c88;
+            margin-top: 0;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .content-box h3{
+            color: #1f3c88;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-box p{
+            line-height: 1.8;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .content-box ul{
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .content-box li{
+            background: none;
+            padding: 8px 0;
+            margin: 8px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .course-link{
+            color: #0b57d0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .course-link:hover{
+            text-decoration: underline;
+        }
+
+        .initial-message{
+            text-align: center;
+            color: #999;
+            padding: 80px 40px;
+        }
+
+        .initial-message h3{
+            color: #1f3c88;
+            margin-top: 0;
+        }
+
+        /* FOOTER */
+
+        footer{
+            text-align: center;
+            padding: 15px;
+            background: #f5f7fa;
+            color: #999;
+            font-size: 13px;
+            border-top: 1px solid #e0e6f2;
+        }
+
+        footer a{
+            color: #0b57d0;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+        }
+
+        /* SCROLLBAR STYLING */
+
+        .left-panel::-webkit-scrollbar,
+        .right-panel::-webkit-scrollbar{
+            width: 6px;
+        }
+
+        .left-panel::-webkit-scrollbar-track,
+        .right-panel::-webkit-scrollbar-track{
+            background: transparent;
+        }
+
+        .left-panel::-webkit-scrollbar-thumb,
+        .right-panel::-webkit-scrollbar-thumb{
+            background: #d0d8e8;
+            border-radius: 3px;
+        }
+
+        .left-panel::-webkit-scrollbar-thumb:hover,
+        .right-panel::-webkit-scrollbar-thumb:hover{
+            background: #b8c2d6;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 900px){
+
+            .main-container{
+                flex-direction: column;
+            }
+
+            .left-panel{
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #e0e6f2;
+                max-height: 400px;
+            }
+
+            .right-panel{
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Courses</h1>
+    <h3>Abdul Hanan Sheikh - QUEST, Nawabshah</h3>
+</header>
 
 
+<div class="main-container">
 
-</P>
-</TD>
-</TR>
-</TABLE>
-<a href="http://www.freecounterstat.com" target="_Blank" title="web page visitor counter"></a><br/>
-<script type="text/javascript" src="http://counter1.statcounterfree.com/private/countertab.js?c=f9f208622a1036efc08b1e9a4d0d6e9d"></script>
-<TR>
- </TABLE> 
-</CENTER>
+    <!-- LEFT SIDEBAR MENU -->
 
-<P><BR><BR>
-</P>
+    <div class="left-panel">
+
+        <div class="menu-title">Navigation</div>
+
+        <!-- Current Courses Section -->
+        <div class="menu-section">
+            <div class="menu-section-header expanded" onclick="toggleSection(this)">
+                Current Courses
+                <span class="arrow-icon">›</span>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <a onclick="loadContent('Current Courses', 'Graduate Level', [], 'current-grad')">
+                        📌 Graduate Level
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a onclick="loadContent('Undergraduate Courses', 'Current', [
+                        {name: 'Pre Calculus - I', link: 'PreCal/PreCal.html'},
+                        {name: 'Linear Algebra for Data Science', link: 'LASpring26/LA24DS.html'}
+                    ], 'current-undergrad')">
+                        📌 Undergraduate Level
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Past Courses Section -->
+        <div class="menu-section">
+            <div class="menu-section-header" onclick="toggleSection(this)">
+                Past Courses
+                <span class="arrow-icon">›</span>
+            </div>
+            <div class="menu-items collapsed">
+                <div class="menu-item">
+                    <a onclick="loadContent('Past Courses - Graduate Level', 'At QUEST, Nawabshah', [
+                        {name: 'Advanced Numerical Analysis', link: 'MG/mgmethods.html'},
+                        {name: 'Multigrid Methods', link: 'MG/mgmethods.html'},
+                        {name: 'Fixed Point Theory', link: 'FPT/FixedPointTh.html'},
+                        {name: 'Numerical Modeling and Simulations for Energy and Environment Engineering', link: 'NumMod/NumMod.html'},
+                        {name: 'Computational Methods for Electrical Engineering', link: 'CompMethods/CompMethods.html'}
+                    ], 'past-grad')">
+                        📌 Graduate Level (QUEST)
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a onclick="loadContent('Past Courses - Undergraduate Level (QUEST)', 'At QUEST, Nawabshah', [
+                        {name: 'Discrete Structures', link: 'DiscStruc/DS.html'},
+                        {name: 'Business Mathematics', link: 'BusiMaths/BusiMaths.html'},
+                        {name: 'Statistics', link: 'SI/SI.html'},
+                        {name: 'Calculus (I)', link: 'Cal1/Cal1.html'},
+                        {name: 'Numerical Analysis', link: 'NA/NumAnalysis.html'},
+                        {name: 'Quantative Business Analytics', link: 'QBA/qba.html'},
+                        {name: 'Tensor Analysis', link: 'TensorAnalysis/tensoranalysis.html'},
+                        {name: 'Numerical Analysis with Computer Applications (NACA)', link: 'NA/NACA.html'},
+                        {name: 'Calculus and Analytical Geometry', link: 'CAAG/CAAG.html'},
+                        {name: 'Measure Theory', link: 'MT/MeasureTh.html'},
+                        {name: 'Linear Algebra', link: 'LinAlg/LinAlg.html'},
+                        {name: 'Engineering Economics', link: 'EnggEco/EnggEco.html'}
+                    ], 'past-undergrad-quest')">
+                        📌 Undergraduate Level (QUEST)
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a onclick="loadContent('Past Courses - NED University', 'At NED University of Engineering and Technology, Karachi', [
+                        {name: 'Linear Algebra and Differential Equation (2008-2009)', link: '#'},
+                        {name: 'Advance Calculus (2008-2009)', link: '#'}
+                    ], 'past-undergrad-ned')">
+                        📌 Undergraduate Level (NED)
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
-</BODY>
-</HTML>
+    <!-- RIGHT CONTENT -->
 
+    <div class="right-panel" id="rightPanel">
+
+        <div class="initial-message">
+            <h3>Welcome</h3>
+            <p>Select a course category from the menu on the left to view available courses</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+    Back to <a href="http://ahsheikh.github.io">home page</a> of Abdul Hanan Sheikh<br>
+    © AHS 2026 | Teaching and Courses
+</footer>
+
+<script>
+
+function toggleSection(header) {
+    const itemsContainer = header.nextElementSibling;
+    const arrowIcon = header.querySelector('.arrow-icon');
+    
+    // Close all other sections
+    document.querySelectorAll('.menu-section-header').forEach(h => {
+        if (h !== header) {
+            h.classList.remove('expanded');
+            h.nextElementSibling.classList.add('collapsed');
+        }
+    });
+    
+    // Toggle current section
+    header.classList.toggle('expanded');
+    itemsContainer.classList.toggle('collapsed');
+}
+
+function loadContent(title, subtitle, courses, sectionId) {
+    const rightPanel = document.getElementById('rightPanel');
+    
+    // Remove active class from all menu items
+    document.querySelectorAll('.menu-item a').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // Add active class to clicked item
+    event.target.classList.add('active');
+    
+    // Build course list HTML
+    let coursesHTML = '';
+    if (courses.length > 0) {
+        coursesHTML = '<ul>';
+        courses.forEach(course => {
+            if (course.link && course.link !== '#') {
+                coursesHTML += `<li><a href="${course.link}" class="course-link">${course.name}</a></li>`;
+            } else {
+                coursesHTML += `<li>${course.name}</li>`;
+            }
+        });
+        coursesHTML += '</ul>';
+    } else {
+        coursesHTML = '<p style="color: #999; font-style: italic;">No courses listed for this category.</p>';
+    }
+    
+    // Build the content
+    const html = `
+        <div class="content-box">
+            <h2>${title}</h2>
+            <h3>${subtitle}</h3>
+            ${coursesHTML}
+        </div>
+    `;
+    
+    rightPanel.innerHTML = html;
+    rightPanel.scrollTop = 0;
+}
+
+</script>
+
+</body>
+</html>
