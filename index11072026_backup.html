@@ -16,7 +16,358 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ============================================================
+     DESIGN TOKENS
+     Palette takes its two accents from the two halves of his
+     career: "Delft blue" (TU Delft / Delft pottery, Netherlands)
+     and aged brass (institute plaques, Pakistan). Ink is a near
+     black navy so the accents keep their temperature.
+     ============================================================ */
+  :root{
+    --ink: #16232E;
+    --ink-soft: #4A5A68;
+    --ink-faint: #7C8894;
+    --paper: #F3F4F0;
+    --paper-raised: #FDFDFC;
+    --delft: #1E4C8A;
+    --delft-deep: #10233F;
+    --delft-tint: #E4EBF3;
+    --brass: #AD7C2C;
+    --brass-bright: #C89A4A;
+    --brass-tint: #F1E6CD;
+    --line: rgba(22,35,46,0.12);
+    --line-soft: rgba(22,35,46,0.07);
+    --radius-l: 22px;
+    --radius-m: 14px;
+    --radius-s: 8px;
+    --shadow-card: 0 1px 2px rgba(16,35,63,0.06), 0 12px 32px -16px rgba(16,35,63,0.18);
+    --max: 1120px;
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+
+  *,*::before,*::after{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *,*::before,*::after{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+
+  body{
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img{ max-width: 100%; display: block; }
+  a{ color: inherit; }
+
+  .container{
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .skip-link{
+    position: absolute; left: -999px; top: auto;
+    background: var(--ink); color: #fff; padding: 12px 18px;
+    border-radius: var(--radius-s); z-index: 999;
+  }
+  .skip-link:focus{ left: 20px; top: 20px; }
+
+  :focus-visible{ outline: 2.5px solid var(--delft); outline-offset: 3px; }
+
+  /* -------------------- Eyebrow / section labels -------------------- */
+  .eyebrow{
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: var(--delft);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 14px;
+  }
+  .eyebrow::before{
+    content: "§";
+    color: var(--brass);
+    font-size: 1rem;
+  }
+
+  h1,h2,h3{
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 0.5em;
+    letter-spacing: -0.01em;
+  }
+
+  .section{ padding: 88px 0; border-bottom: 1px solid var(--line-soft); }
+  .section-head{ max-width: 640px; margin-bottom: 44px; }
+  .section-head p{ color: var(--ink-soft); font-size: 1.05rem; }
+
+  /* -------------------- Nav -------------------- */
+  .nav{
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(243,244,240,0.86);
+    backdrop-filter: blur(10px) saturate(1.1);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav .container{
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .nav__brand{
+    font-family: var(--font-display); font-weight: 600; font-size: 1.05rem;
+    text-decoration: none; color: var(--ink);
+    display: flex; flex-direction: column; line-height: 1.15;
+  }
+  .nav__brand small{
+    font-family: var(--font-mono); font-weight: 400; font-size: 0.66rem;
+    letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase;
+  }
+  .nav__links{ display: flex; align-items: center; gap: 30px; list-style: none; margin: 0; padding: 0; }
+  .nav__links a{
+    text-decoration: none; font-size: 0.94rem; color: var(--ink-soft);
+    position: relative; padding: 4px 0;
+  }
+  .nav__links a:hover{ color: var(--ink); }
+  .nav__links a::after{
+    content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px;
+    background: var(--brass); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+  .nav__links a:hover::after{ transform: scaleX(1); }
+  .nav__cta{ display: flex; align-items: center; gap: 14px; }
+  .nav__toggle{
+    display: none; background: none; border: none; cursor: pointer; padding: 8px;
+    color: var(--ink);
+  }
+
+  .btn{
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-weight: 600; font-size: 0.92rem;
+    padding: 11px 20px; border-radius: 999px; text-decoration: none;
+    border: 1.5px solid transparent; cursor: pointer; white-space: nowrap;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  }
+  .btn svg{ width: 15px; height: 15px; flex: none; }
+  .btn--primary{ background: var(--delft); color: #fff; }
+  .btn--primary:hover{ background: var(--delft-deep); transform: translateY(-1px); }
+  .btn--ghost{ border-color: var(--line); color: var(--ink); background: transparent; }
+  .btn--ghost:hover{ border-color: var(--delft); color: var(--delft); }
+  .btn--brass{ background: var(--brass); color: #2A1D06; }
+  .btn--brass:hover{ background: var(--brass-bright); transform: translateY(-1px); }
+  .btn--small{ padding: 8px 14px; font-size: 0.82rem; }
+
+  /* -------------------- Hero -------------------- */
+  .hero{
+    position: relative; overflow: hidden;
+    padding: 80px 0 100px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .hero__field{
+    position: absolute; top: -10%; right: -12%; width: 900px; height: 900px;
+    opacity: 0.55; pointer-events: none;
+  }
+  .hero .container{
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
+  }
+  .hero__meta{
+    font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft);
+    display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 22px 0 30px;
+  }
+  .hero__meta span{ display: inline-flex; align-items: center; gap: 6px; }
+  .hero__meta svg{ width: 14px; height: 14px; color: var(--brass); }
+
+  .hero h1{ font-size: clamp(2.3rem, 4vw, 3.4rem); line-height: 1.06; margin-bottom: 0.28em; }
+  .hero__role{ font-size: 1.12rem; color: var(--ink-soft); max-width: 46ch; margin-bottom: 22px; }
+  .hero__tagline{ font-size: 1.05rem; color: var(--ink); max-width: 52ch; margin-bottom: 34px; }
+  .hero__tagline em{ font-style: normal; color: var(--delft); border-bottom: 2px solid var(--brass-tint); }
+  .hero__actions{ display: flex; flex-wrap: wrap; gap: 14px; }
+
+  .hero__portrait{ position: relative; justify-self: center; }
+  .hero__frame{
+    position: relative; width: 320px; width: min(320px, 78vw); aspect-ratio: 1/1;
+  }
+  .hero__ring{
+    position: absolute; inset: -18px; border-radius: 50%;
+    border: 1.5px dashed var(--brass); opacity: 0.55;
+    animation: spin 40s linear infinite;
+  }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+  .hero__photo{
+    width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+    border: 6px solid var(--paper-raised);
+    box-shadow: var(--shadow-card), 0 0 0 2px var(--delft);
+  }
+  .hero__photo img{ width: 100%; height: 100%; object-fit: cover; }
+  .hero__badge{
+    position: absolute; right: 4%; bottom: 2%;
+    background: var(--brass); color: #2A1D06;
+    font-family: var(--font-mono); font-weight: 600; font-size: 0.76rem;
+    padding: 8px 14px; border-radius: 999px; box-shadow: var(--shadow-card);
+    border: 3px solid var(--paper);
+  }
+
+  /* -------------------- About -------------------- */
+  .about__grid{ display: grid; grid-template-columns: 1.4fr 1fr; gap: 56px; }
+  .about p{ margin: 0 0 1.1em; color: var(--ink-soft); font-size: 1.02rem; }
+  .about strong{ color: var(--ink); font-weight: 600; }
+  .chips{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .chip{
+    font-family: var(--font-mono); font-size: 0.78rem; color: var(--delft);
+    background: var(--delft-tint); border: 1px solid rgba(30,76,138,0.18);
+    padding: 7px 13px; border-radius: 999px;
+  }
+  .stat-card{
+    background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-l);
+    padding: 28px; box-shadow: var(--shadow-card);
+  }
+  .stat-card__row{ display: flex; justify-content: space-between; align-items: baseline; padding: 13px 0; border-bottom: 1px dashed var(--line); }
+  .stat-card__row:last-child{ border-bottom: none; }
+  .stat-card__num{ font-family: var(--font-display); font-size: 1.5rem; color: var(--delft); }
+  .stat-card__label{ font-size: 0.86rem; color: var(--ink-soft); text-align: right; }
+
+  /* -------------------- Timeline (Education) -------------------- */
+  .timeline{ position: relative; margin-left: 6px; padding-left: 34px; border-left: 2px solid var(--line); }
+  .timeline__item{ position: relative; padding-bottom: 34px; }
+  .timeline__item:last-child{ padding-bottom: 0; }
+  .timeline__dot{
+    position: absolute; left: -41px; top: 4px; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--paper); border: 3px solid var(--delft);
+  }
+  .timeline__year{ font-family: var(--font-mono); font-size: 0.82rem; color: var(--brass); font-weight: 600; }
+  .timeline__item h3{ font-size: 1.18rem; margin: 4px 0 4px; }
+  .timeline__item p{ margin: 0; color: var(--ink-soft); }
+  .timeline__item a{ color: var(--delft); text-decoration: none; border-bottom: 1px solid rgba(30,76,138,0.3); }
+  .timeline__item a:hover{ border-color: var(--delft); }
+
+  /* -------------------- Work grid -------------------- */
+  .work__grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .work__card{
+    background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-l);
+    padding: 26px 24px; text-decoration: none; color: var(--ink);
+    display: flex; flex-direction: column; gap: 10px; min-height: 190px;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .work__card:hover{ transform: translateY(-4px); border-color: var(--delft); }
+  .work__icon{
+    width: 38px; height: 38px; border-radius: 10px; background: var(--delft-tint);
+    display: flex; align-items: center; justify-content: center; color: var(--delft);
+  }
+  .work__icon svg{ width: 19px; height: 19px; }
+  .work__card h3{ font-size: 1.12rem; margin: 4px 0 0; }
+  .work__card p{ margin: 0; color: var(--ink-soft); font-size: 0.92rem; flex: 1; }
+  .work__arrow{ font-family: var(--font-mono); font-size: 0.82rem; color: var(--brass); display: inline-flex; align-items: center; gap: 6px; }
+
+  /* -------------------- Affiliations -------------------- */
+  .affil__list{ list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .affil__list li{
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 18px 20px; background: var(--paper-raised); border: 1px solid var(--line); border-radius: var(--radius-m);
+  }
+  .affil__list svg{ width: 18px; height: 18px; color: var(--brass); flex: none; margin-top: 3px; }
+  .affil__list a{ color: var(--delft); text-decoration: none; border-bottom: 1px solid rgba(30,76,138,0.3); }
+
+  /* -------------------- Talks -------------------- */
+  .talks{ display: flex; flex-direction: column; }
+  .talks__row{
+    display: grid; grid-template-columns: 90px 1fr auto; gap: 18px; align-items: baseline;
+    padding: 18px 0; border-bottom: 1px solid var(--line-soft);
+  }
+  .talks__row:first-child{ padding-top: 0; }
+  .talks__year{ font-family: var(--font-mono); color: var(--brass); font-weight: 600; font-size: 0.9rem; }
+  .talks__name{ font-family: var(--font-display); font-size: 1.05rem; }
+  .talks__venue{ color: var(--ink-soft); font-size: 0.92rem; }
+  .talks__link{ color: var(--delft); text-decoration: none; font-size: 0.86rem; white-space: nowrap; }
+  .talks__link:hover{ text-decoration: underline; }
+
+  /* -------------------- Resources -------------------- */
+  .resources__grid{ display: flex; flex-wrap: wrap; gap: 12px; }
+  .resource-chip{
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line);
+    background: var(--paper-raised); text-decoration: none; color: var(--ink);
+    font-size: 0.9rem; transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .resource-chip:hover{ border-color: var(--delft); color: var(--delft); }
+  .resource-chip svg{ width: 14px; height: 14px; color: var(--brass); }
+
+  /* -------------------- Footer / Contact -------------------- */
+  .footer{
+    position: relative; overflow: hidden;
+    background: var(--delft-deep); color: rgba(255,255,255,0.86);
+    padding: 78px 0 40px;
+  }
+  .footer__mesh{ position: absolute; inset: 0; opacity: 0.35; pointer-events: none; }
+  .footer .container{ position: relative; z-index: 1; }
+  .footer .eyebrow{ color: var(--brass-bright); }
+  .footer .eyebrow::before{ color: var(--brass-bright); }
+  .footer h2{ color: #fff; }
+  .footer__grid{ display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 44px; margin-top: 40px; }
+  .footer__col h3{ font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brass-bright); font-weight: 600; margin-bottom: 16px; }
+  .footer__col p, .footer__col a{ color: rgba(255,255,255,0.78); font-size: 0.94rem; }
+  .footer address{ font-style: normal; line-height: 1.7; }
+  .footer__list{ list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .footer__list a{ text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+  .footer__list a:hover{ color: #fff; }
+  .footer__list svg{ width: 17px; height: 17px; flex: none; color: var(--brass-bright); }
+  .footer__email-btn{
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 4px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25);
+    color: #fff; padding: 9px 15px; border-radius: 999px; font-family: var(--font-mono); font-size: 0.82rem;
+    cursor: pointer;
+  }
+  .footer__email-btn:hover{ background: rgba(255,255,255,0.16); }
+  .footer__bottom{
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.14);
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    font-size: 0.82rem; color: rgba(255,255,255,0.55);
+  }
+  .footer__bottom a{ color: rgba(255,255,255,0.72); text-decoration: none; }
+  .to-top{
+    display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.72); text-decoration: none; font-size: 0.82rem;
+  }
+  .to-top svg{ width: 14px; height: 14px; }
+
+  /* -------------------- Reveal on scroll --------------------
+     Content is fully visible by default so it never depends on
+     JS to be readable (no-JS, crawlers, slow connections). Only
+     once JS confirms it's running does it hide-then-reveal items. */
+  .js-reveal .reveal{ opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .js-reveal .reveal.is-visible{ opacity: 1; transform: none; }
+
+  /* -------------------- Responsive -------------------- */
+  @media (max-width: 900px){
+    .hero .container{ grid-template-columns: 1fr; }
+    .hero__portrait{ order: -1; }
+    .about__grid{ grid-template-columns: 1fr; }
+    .work__grid{ grid-template-columns: repeat(2, 1fr); }
+    .footer__grid{ grid-template-columns: 1fr; gap: 32px; }
+  }
+  @media (max-width: 720px){
+    .nav__links, .nav__cta .btn--ghost{ display: none; }
+    .nav__toggle{ display: inline-flex; }
+    .nav.is-open .nav__links{
+      display: flex; position: absolute; top: 68px; left: 0; right: 0;
+      background: var(--paper); flex-direction: column; padding: 20px 28px 28px;
+      border-bottom: 1px solid var(--line); gap: 18px;
+    }
+    .section{ padding: 60px 0; }
+    .work__grid{ grid-template-columns: 1fr; }
+    .talks__row{ grid-template-columns: 1fr; gap: 4px; }
+    .talks__link{ margin-top: 4px; }
+  }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -28,6 +379,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#talks">Talks</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav__cta">
@@ -194,12 +546,6 @@
           <p>Journal articles, technical reports and the PhD thesis.</p>
           <span class="work__arrow">Read publications &rarr;</span>
         </a>
-        <a class="work__card reveal" href="conferences.html">
-          <span class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg></span>
-          <h3>Conference &amp; Talks</h3>
-          <p>Conferences and workshops attended, in the Netherlands and Pakistan.</p>
-          <span class="work__arrow">View conferences &rarr;</span>
-        </a>
         <a class="work__card reveal" href="software.html">
           <span class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l-4 4 4 4M16 9l4 4-4 4M13 5l-2 16"/></svg></span>
           <h3>Software</h3>
@@ -227,6 +573,38 @@
           <span>Member, <a href="http://pakms.org.pk/">Pakistan Mathematical Society</a>, Islamabad, Pakistan.</span>
         </li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ============================== TALKS ============================== -->
+  <section class="section" id="talks">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Talks</p>
+        <h2>Conferences &amp; workshops</h2>
+      </div>
+      <div class="talks reveal">
+        <div class="talks__row">
+          <span class="talks__year">2015</span>
+          <div><div class="talks__name">Preconditioning &rsquo;15</div><div class="talks__venue">International Conference on Preconditioning Techniques for Scientific and Industrial Applications &middot; Eindhoven, the Netherlands</div></div>
+          <a class="talks__link" href="http://www.win.tue.nl/precon2015/" target="_blank" rel="noopener">Visit site &rarr;</a>
+        </div>
+        <div class="talks__row">
+          <span class="talks__year">2015</span>
+          <div><div class="talks__name">NCMCS 2015</div><div class="talks__venue">National Conference on Mathematics and Computer Science &middot; QUEST, Nawabshah, Pakistan</div></div>
+          <a class="talks__link" href="http://ncmcs.quest.edu.pk/" target="_blank" rel="noopener">Visit site &rarr;</a>
+        </div>
+        <div class="talks__row">
+          <span class="talks__year">2015</span>
+          <div><div class="talks__name">Developing Industry-Driven Technologies</div><div class="talks__venue">One-day workshop &middot; QUEST, Nawabshah, Pakistan</div></div>
+          <a class="talks__link" href="http://quest.edu.pk/news/onedayworkshop.php" target="_blank" rel="noopener">Visit site &rarr;</a>
+        </div>
+        <div class="talks__row">
+          <span class="talks__year">2014</span>
+          <div><div class="talks__name">EMG 2014</div><div class="talks__venue">European Multigrid Conference &middot; Leuven, Belgium</div></div>
+          <a class="talks__link" href="http://metronu.ulb.ac.be/EMG2014/" target="_blank" rel="noopener">Visit site &rarr;</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -339,7 +717,55 @@
   </div>
 </footer>
 
-<script src="assets/site.js" defer></script>
+<script>
+  // Mobile nav toggle
+  (function(){
+    var nav = document.getElementById('nav');
+    var toggle = document.getElementById('navToggle');
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('.nav__links a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded','false'); });
+    });
+  })();
+
+  // Reveal on scroll — progressive enhancement only.
+  // Content is visible by default (see CSS); we only opt into the
+  // hide/reveal animation once we know JS + IntersectionObserver work,
+  // and respect prefers-reduced-motion.
+  (function(){
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!('IntersectionObserver' in window) || reduceMotion) return;
+    document.documentElement.classList.add('js-reveal');
+    var items = document.querySelectorAll('.reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function(el){ io.observe(el); });
+  })();
+
+  // Email reveal (kept out of static HTML to deter basic scraping)
+  (function(){
+    var btn = document.getElementById('emailBtn');
+    var label = document.getElementById('emailLabel');
+    var user = 'hanangul12', domain = 'yahoo.co.uk';
+    btn.addEventListener('click', function(){
+      var addr = user + '@' + domain;
+      window.location.href = 'mailto:' + addr;
+      label.textContent = addr;
+    });
+  })();
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
