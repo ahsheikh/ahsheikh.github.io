@@ -335,6 +335,57 @@
   .page-header h1{ font-size: clamp(2rem, 3.4vw, 2.8rem); margin-bottom: 0.3em; }
   .page-header__intro{ font-size: 1.05rem; color: var(--ink-soft); max-width: 62ch; margin: 0; }
 
+  /* -------------------- Content pages (publications, courses, etc.) -------------------- */
+  .content-prose{ max-width: 820px; color: var(--ink-soft); font-size: 1.02rem; }
+  .content-prose > *:first-child{ margin-top: 0; }
+  .content-prose h2{
+    font-size: 1.35rem; margin: 2.2em 0 0.75em; color: var(--ink);
+    padding-bottom: 0.35em; border-bottom: 1px solid var(--line);
+  }
+  .content-prose h2:first-child{ margin-top: 0; }
+  .content-prose h3{ font-size: 1.12rem; margin: 1.5em 0 0.5em; color: var(--ink); }
+  .content-prose p{ margin: 0 0 1em; }
+  .content-prose ul, .content-prose ol{ margin: 0 0 1.2em; padding-left: 1.35em; }
+  .content-prose li{ margin: 0.55em 0; }
+  .content-prose a{ color: var(--delft); text-decoration: none; border-bottom: 1px solid rgba(30,76,138,0.28); }
+  .content-prose a:hover{ border-color: var(--delft); }
+  .content-prose em{ font-style: italic; color: var(--ink); }
+  .content-prose img{ margin: 1.5em auto; border-radius: var(--radius-m); box-shadow: var(--shadow-card); }
+  .content-prose .meta-link{ font-family: var(--font-mono); font-size: 0.82rem; white-space: nowrap; }
+
+  .pub-item{ margin-bottom: 1.35em; padding-bottom: 1.35em; border-bottom: 1px dashed var(--line-soft); }
+  .pub-item:last-child{ border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .pub-item__title{ font-family: var(--font-display); color: var(--ink); font-size: 1.05rem; margin: 0 0 0.35em; }
+  .pub-item__meta{ font-size: 0.92rem; color: var(--ink-faint); margin: 0; }
+
+  .link-cards{ display: grid; gap: 14px; max-width: 640px; }
+  .link-card{
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 18px 22px; background: var(--paper-raised); border: 1px solid var(--line);
+    border-radius: var(--radius-m); text-decoration: none; color: var(--ink);
+    box-shadow: var(--shadow-card); transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .link-card:hover{ transform: translateY(-2px); border-color: var(--delft); }
+  .link-card span{ font-family: var(--font-mono); font-size: 0.82rem; color: var(--brass); }
+
+  .data-table-wrap{ overflow-x: auto; margin: 1em 0 1.5em; border: 1px solid var(--line); border-radius: var(--radius-m); background: var(--paper-raised); }
+  .data-table{ width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  .data-table th, .data-table td{ padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  .data-table th{ font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--delft); background: var(--delft-tint); }
+  .data-table tr:last-child td{ border-bottom: none; }
+  .data-table tbody tr:hover td{ background: rgba(30,76,138,0.04); }
+
+  .tab-bar{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tab-btn{
+    font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+    padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line);
+    background: var(--paper-raised); color: var(--ink-soft); cursor: pointer;
+  }
+  .tab-btn.is-active{ background: var(--delft); border-color: var(--delft); color: #fff; }
+  .tab-panel{ display: none; }
+  .tab-panel.is-active{ display: block; }
+
+  /* -------------------- Reveal on scroll --------------------
      Content is fully visible by default so it never depends on
      JS to be readable (no-JS, crawlers, slow connections). Only
      once JS confirms it's running does it hide-then-reveal items. */

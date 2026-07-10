@@ -1,56 +1,73 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE>Softwares of AH Sheikh - TUDeft Homepage</TITLE>
-	<META NAME="GENERATOR" CONTENT="LibreOffice 3.5  (Linux)">
-	<META NAME="CREATED" CONTENT="0;0">
-	<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
-	<META NAME="CHANGED" CONTENT="20140219;19133700">
-	<META NAME="CHANGEDBY" CONTENT="AH Sheikh">
-	<STYLE TYPE="text/css">
-	<!--
-		H1.cjk { font-family: "verdana" }
-		H1.ctl { font-family: "verdana" }
-		H2.cjk { font-family: "Droid Sans" }
-		H2.ctl { font-family: "FreeSans" }
-		A:link { color: #0000ff; text-decoration: none }
-		A:visited { color: #FF0000 }
-	-->
-	</STYLE>
-</HEAD>
-<BODY LANG="en-US" LINK="#0000ff" VLINK="#FF0000" BGCOLOR="#D8E6FF" DIR="LTR">   <!--#FFFFDE -->
-				<H2 CLASS="western">Software page of AH Sheikh:</H2>
-Following software can be obtained on this page. 
-				<UL>		
-					<LI><P ALIGN="justify" STYLE="margin-bottom: 0in; line-height: 150%"> <A HREF="adef1.html">Software for multilevel ADEF1 solver for Helmholtz equation</A>
-					<!--<A HREF="bib/MSSS_toolbox.bib">[Bibtex]</A>.</P> -->
-					
-					
-					
-					
-					</UL>
-					
-					
-					
-					</SPAN></SPAN>
-					</P>
-				
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software — Dr. Abdul Hanan Sheikh</title>
+<meta name="description" content="Research software by Dr. Abdul Hanan Sheikh, including the multilevel ADEF1 Helmholtz solver.">
+<link rel="icon" href="book.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-					
-					</SPAN></SPAN>
-					</P>
-				</UL>
-				
-			</TD>
-		</TR>
-	</TABLE>
-<P><BR><BR>
-</P>
-</BODY>
-</HTML>
-<hr>
-Back to
-<a href="http://ahsheikh.github.com">home page
-</a> of
-Abdul Hanan Sheikh<br><br>
+<nav class="nav" id="nav">
+  <div class="container">
+    <a href="index.html" class="nav__brand">Abdul Hanan Sheikh<small>Mathematics &amp; Statistics · QUEST</small></a>
+    <ul class="nav__links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="CV/cv_HananSheikh.pdf" target="_blank" rel="noopener">CV</a>
+      <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-header" id="top">
+    <div class="container">
+      <a class="breadcrumb" href="index.html">&larr; Back to home</a>
+      <p class="eyebrow">Work</p>
+      <h1>Software</h1>
+      <p class="page-header__intro">Research codes accompanying published work on Helmholtz solvers and preconditioners.</p>
+    </div>
+  </header>
+
+  <section class="section" style="border-bottom:none;">
+    <div class="container">
+      <div class="link-cards reveal">
+        <a class="link-card" href="adef1.html">
+          <div>
+            <strong>Multilevel ADEF1 solver for the Helmholtz equation</strong>
+            <p style="margin:6px 0 0;color:var(--ink-soft);font-size:0.92rem;">PETSc-based solver with manual and GitHub download.</p>
+          </div>
+          <span>View details &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h2>Let&rsquo;s talk numerics, teaching, or research</h2>
+    <div class="footer__bottom">
+      <span>&copy; <span id="year"></span> Abdul Hanan Sheikh.</span>
+      <a class="to-top" href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>
