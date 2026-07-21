@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload to Google Drive</title>
+</head>
+<body>
+    <h2>Upload a File to Google Drive</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+    <div id="responseMessage"></div>
+
+    <script>
+        function uploadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            if (!file) {
+                alert('Please select a file first.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            // Replace with your Google Apps Script Web App URL
+            const scriptURL = 'YOUR_WEB_APP_URL';
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('responseMessage').innerText = 'Success: ' + data.message;
+            })
+            .catch(error => {
+                document.getElementById('responseMessage').innerText = 'Error: ' + error;
+            });
+        }
+    </script>
+</body>
+</html>
