@@ -587,23 +587,63 @@ function loadContent(title, filePath) {
     // Add active class to clicked item
     event.target.classList.add('active');
     
-    // Build the content with PDF iframe
-    const html = `
-        <div style="display: flex; flex-direction: column; height: 100%; gap: 15px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <h2 style="margin: 0; color: #1f3c88; font-size: 22px;">${title}</h2>
-                <a href="${filePath}" download class="download-btn" style="margin: 0;">⬇ Download</a>
+    // Check if the file is an HTML file (like upload.html)
+    if (filePath.endsWith('.html')) {
+        // For HTML files, fetch and display without download button
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('File not found');
+                }
+                return response.text();
+            })
+            .then(htmlContent => {
+                // Extract only the body content to avoid duplicate HTML structure
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(htmlContent, 'text/html');
+                const bodyContent = doc.body.innerHTML;
+                
+                rightPanel.innerHTML = `
+                    <div style="display: flex; flex-direction: column; height: 100%; gap: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <h2 style="margin: 0; color: #1f3c88; font-size: 22px;">${title}</h2>
+                            <!-- No download button for HTML pages -->
+                        </div>
+                        
+                        <div style="flex: 1; background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 30px;">
+                            ${bodyContent}
+                        </div>
+                    </div>
+                `;
+            })
+            .catch(error => {
+                rightPanel.innerHTML = `
+                    <div style="background: white; padding: 40px; border-radius: 10px; text-align: center;">
+                        <h3 style="color: #d32f2f;">Error Loading Upload Page</h3>
+                        <p>Please check if the upload.html file exists.</p>
+                    </div>
+                `;
+            });
+    } else {
+        // For PDF files, show with download button
+        const html = `
+            <div style="display: flex; flex-direction: column; height: 100%; gap: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <h2 style="margin: 0; color: #1f3c88; font-size: 22px;">${title}</h2>
+                    <a href="${filePath}" download class="download-btn" style="margin: 0;">⬇ Download</a>
+                </div>
+                
+                <iframe 
+                    src="${filePath}" 
+                    style="flex: 1; border: none; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"
+                    title="${title}">
+                </iframe>
             </div>
-            
-            <iframe 
-                src="${filePath}" 
-                style="flex: 1; border: none; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"
-                title="${title}">
-            </iframe>
-        </div>
-    `;
+        `;
+        
+        rightPanel.innerHTML = html;
+    }
     
-    rightPanel.innerHTML = html;
     rightPanel.scrollTop = 0;
 }
 
