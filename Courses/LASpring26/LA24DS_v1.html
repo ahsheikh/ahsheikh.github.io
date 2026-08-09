@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linear Algebra - 24 DS - Spring 2026</title>
-<link rel="icon" type="image/png" sizes="32x32" href="../quest.png">
+    <title> Linear Algebra - 24 DS - Spring 2026 </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../quest.png">
     <style>
-
-        *{
+        * {
             box-sizing: border-box;
         }
 
-        body{
+        body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f5f7fa;
         }
 
         /* TOP HEADER */
-
-        header{
+        header {
             background: linear-gradient(135deg, #1f3c88 0%, #2d5aa8 100%);
             color: white;
             padding: 30px 25px;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
-        header h1{
+        header h1 {
             margin: 0;
             font-size: 38px;
             font-weight: 700;
             letter-spacing: -0.5px;
         }
 
-        header h3{
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header h3 {
             margin-top: 8px;
             font-weight: 400;
             opacity: 0.95;
@@ -42,15 +45,13 @@
         }
 
         /* MAIN LAYOUT */
-
-        .main-container{
+        .main-container {
             display: flex;
             min-height: calc(100vh - 130px);
         }
 
         /* LEFT MENU PANEL */
-
-        .left-panel{
+        .left-panel {
             width: 280px;
             background: #ffffff;
             border-right: 1px solid #e0e6f2;
@@ -58,7 +59,7 @@
             overflow-y: auto;
         }
 
-        .menu-title{
+        .menu-title {
             font-size: 20px;
             font-weight: 700;
             color: #1f3c88;
@@ -69,11 +70,11 @@
             font-size: 13px;
         }
 
-        .menu-section{
+        .menu-section {
             margin-bottom: 8px;
         }
 
-        .menu-section-header{
+        .menu-section-header {
             padding: 12px 20px;
             cursor: pointer;
             font-size: 16px;
@@ -86,46 +87,39 @@
             align-items: center;
         }
 
-        .menu-section-header:hover{
+        .menu-section-header:hover {
             background: #f0f4ff;
             padding-left: 24px;
         }
 
-        .menu-section-header.active{
+        .menu-section-header.active {
             background: #e8f0ff;
             border-left: 4px solid #1f3c88;
             padding-left: 16px;
         }
 
-        .arrow-icon{
+        .arrow-icon {
             font-size: 12px;
             transition: transform 0.2s ease;
         }
 
-        .menu-section-header.expanded .arrow-icon{
+        .menu-section-header.expanded .arrow-icon {
             transform: rotate(90deg);
         }
 
-        .menu-items{
+        .menu-items {
             max-height: 1000px;
             overflow: hidden;
             transition: max-height 0.3s ease, opacity 0.3s ease;
             opacity: 1;
         }
 
-        .menu-items.collapsed{
+        .menu-items.collapsed {
             max-height: 0;
             opacity: 0;
         }
 
-        .menu-item{
-            background: none;
-            margin: 0;
-            padding: 0;
-            border-radius: 0;
-        }
-
-        .menu-item a{
+        .menu-item a {
             display: block;
             padding: 10px 20px 10px 40px;
             text-decoration: none;
@@ -137,13 +131,13 @@
             border-left: 3px solid transparent;
         }
 
-        .menu-item a:hover{
+        .menu-item a:hover {
             background: #f9fbff;
             border-left-color: #0b57d0;
             padding-left: 44px;
         }
 
-        .menu-item a.active{
+        .menu-item a.active {
             background: #e8f0ff;
             border-left-color: #0b57d0;
             color: #0b57d0;
@@ -151,46 +145,33 @@
         }
 
         /* RIGHT CONTENT AREA */
-
-        .right-panel{
+        .right-panel {
             flex: 1;
             padding: 40px;
             overflow-y: auto;
         }
 
-        .content-box{
+        .content-box {
             background: white;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
 
-        .content-box h2{
+        .content-box h2 {
             color: #1f3c88;
             margin-top: 0;
             font-size: 28px;
             margin-bottom: 20px;
         }
 
-        .content-box p{
+        .content-box p {
             line-height: 1.8;
             color: #555;
             font-size: 16px;
         }
 
-        .content-box ul{
-            margin-top: 15px;
-            padding-left: 20px;
-        }
-
-        .content-box li{
-            background: none;
-            padding: 5px 0;
-            margin: 8px 0;
-            color: #555;
-        }
-
-        .resource-file{
+        .resource-file {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -201,18 +182,18 @@
             border-left: 4px solid #0b57d0;
         }
 
-        .resource-file a{
+        .resource-file a {
             color: #0b57d0;
             text-decoration: none;
             font-weight: 600;
             flex: 1;
         }
 
-        .resource-file a:hover{
+        .resource-file a:hover {
             text-decoration: underline;
         }
 
-        .download-btn{
+        .download-btn {
             background: #0b57d0;
             color: white;
             border: none;
@@ -225,49 +206,118 @@
             transition: background 0.2s ease;
         }
 
-        .download-btn:hover{
+        .download-btn:hover {
             background: #0845a1;
         }
 
-        .initial-message{
+        .initial-message {
             text-align: center;
             color: #999;
             padding: 80px 40px;
         }
 
-        .initial-message h3{
+        .initial-message h3 {
             color: #1f3c88;
             margin-top: 0;
         }
 
-        /* BOTTOM LINKS */
+        /* ASSIGNMENT SUBMISSION CARDS (blue-rectangled) */
+        .assignment-submission-card {
+            background: #f0f7ff;
+            border: 2px solid #1f3c88;
+            border-radius: 16px;
+            padding: 28px 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(31, 60, 136, 0.12);
+        }
 
-        .bottom-links{
+        .assignment-submission-card h3 {
+            margin-top: 0;
+            color: #1f3c88;
+            font-size: 22px;
+            border-bottom: 2px solid #1f3c88;
+            padding-bottom: 12px;
+            display: inline-block;
+        }
+
+        .assignment-submission-card .upload-area {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px;
+            margin-top: 20px;
+            background: white;
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid #d0dbe8;
+        }
+
+        .assignment-submission-card .upload-area input[type="file"] {
+            flex: 1 1 220px;
+            font-size: 14px;
+            padding: 8px 0;
+        }
+
+        .assignment-submission-card .upload-area .file-name {
+            color: #444;
+            font-size: 14px;
+            font-weight: 500;
+            background: #eef3fa;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .assignment-submission-card .upload-area .submit-btn {
+            background: #1f3c88;
+            color: white;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.2s;
+            letter-spacing: 0.3px;
+        }
+
+        .assignment-submission-card .upload-area .submit-btn:hover {
+            background: #0f2a66;
+        }
+
+        .assignment-submission-card .response-msg {
+            margin-top: 14px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            background: #e9f0fa;
+            color: #1f3c88;
+            font-weight: 500;
+        }
+
+        .bottom-links {
             margin-top: 30px;
             background: white;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
 
-        .bottom-links p{
+        .bottom-links p {
             margin: 12px 0;
             font-size: 15px;
         }
 
-        .bottom-links a{
+        .bottom-links a {
             color: #0b57d0;
             text-decoration: none;
             font-weight: 600;
         }
 
-        .bottom-links a:hover{
+        .bottom-links a:hover {
             text-decoration: underline;
         }
 
-        /* FOOTER */
-
-        footer{
+        footer {
             text-align: center;
             padding: 15px;
             background: #f5f7fa;
@@ -275,337 +325,296 @@
             font-size: 13px;
         }
 
-        /* SCROLLBAR STYLING */
+        footer a {
+            color: #1f3c88;
+            text-decoration: none;
+        }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* SCROLLBAR */
         .left-panel::-webkit-scrollbar,
-        .right-panel::-webkit-scrollbar{
+        .right-panel::-webkit-scrollbar {
             width: 6px;
         }
 
         .left-panel::-webkit-scrollbar-track,
-        .right-panel::-webkit-scrollbar-track{
+        .right-panel::-webkit-scrollbar-track {
             background: transparent;
         }
 
         .left-panel::-webkit-scrollbar-thumb,
-        .right-panel::-webkit-scrollbar-thumb{
+        .right-panel::-webkit-scrollbar-thumb {
             background: #d0d8e8;
             border-radius: 3px;
         }
 
-        .left-panel::-webkit-scrollbar-thumb:hover,
-        .right-panel::-webkit-scrollbar-thumb:hover{
+        .left-panel::-webkit-scrollbar-thumb:hover {
             background: #b8c2d6;
         }
 
-        /* MOBILE */
-
-        @media(max-width: 900px){
-
-            .main-container{
+        @media(max-width: 900px) {
+            .main-container {
                 flex-direction: column;
             }
-
-            .left-panel{
+            .left-panel {
                 width: 100%;
                 border-right: none;
                 border-bottom: 1px solid #e0e6f2;
                 max-height: 400px;
             }
-
-            .right-panel{
+            .right-panel {
                 padding: 20px;
             }
+            .assignment-submission-card .upload-area {
+                flex-direction: column;
+                align-items: stretch;
+            }
         }
-
     </style>
 </head>
-
-\<body>
+<body>
 
 <header>
-    <h1>Linear Algebra</h1>
+    <h1><a href="https://ahsheikh.github.io/Courses/LASpring26/LA24DS.html">Linear Algebra</a></h1>
     <h3>24 DS Batch — Spring 2026</h3>
 </header>
 
-
 <div class="main-container">
-    <!-- LEFT SIDEBAR MENU -->
+
+    <!-- LEFT SIDEBAR -->
     <div class="left-panel">
         <div class="menu-title">Course Menu</div>
-        <!-- Lecture Slides Section -->
+
+        <!-- Lecture Slides -->
         <div class="menu-section">
-            <!-- <div class="menu-section-header expanded" onclick="toggleSection(this)"> -->
-			<div class="menu-section-header" onclick="toggleSection(this)">
+            <div class="menu-section-header" onclick="toggleSection(this)">
                 Lecture Slides
                 <span class="arrow-icon">›</span>
             </div>
             <div class="menu-items collapsed">
-                <div class="menu-item">
-                    <a onclick="loadContent('1. Introduction to Simultaneous Linear Equations', 'slides/1_A_intro_sim_lin_eq.pdf')">
-                        1. Introduction to Simultaneous Linear Equations
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('2. Introduction to Matrices', 'slides/1_Matrices_intro.pdf')">
-                        2. Introduction to Matrices
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('3. Row Operations, REF, RREF and Rank', 'slides/2_row_op_RREF_rank.pdf')">
-                        3. Row Operations, REF, RREF and Rank
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('4. Solving Linear Systems using Different Methods', 'slides/3_solving_LS_diff_methods.pdf')">
-                        4. Solving Linear Systems using Different Methods
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('5. Determinants and Solving Linear Systems', 'slides/4_det_solving_ls_using_row_op.pdf')">
-                        5. Determinants and Solving Linear Systems
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('6. LU Decomposition', 'slides/5_LU_Decomposition.pdf')">
-                        6. LU Decomposition
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('7. Vector Spaces and Linear Combination', 'slides/6_vector_spaces_lc.pdf')">
-                        7. Vector Spaces and Linear Combination
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('8. Linear Combination and Spanning', 'slides/7_LC_spanning_detailed.pdf')">
-                        8. Linear Combination and Spanning
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('9. Subspaces and Linear Independence', 'slides/8_SubSpace_LinInd.pdf')">
-                        9. Subspaces and Linear Independence
-                    </a>
-                </div>
-				<div class="menu-item">
-                    <a onclick="loadContent('9. Subspaces and Linear Independence', 'slides/10_LT1.pdf')">
-                        10. Linear Transforemation Part 1
-                    </a>
-                </div>
-				<div class="menu-item">
-                    <a onclick="loadContent('9. Subspaces and Linear Independence', 'slides/11_LT2.pdf')">
-                        11. Linear Transforemation Part 2
-                    </a>
-                </div>
-				<div class="menu-item">
-                    <a onclick="loadContent('9. Subspaces and Linear Independence', 'slides/12_LT3.pdf')">
-                        12. Linear Transforemation Part 3
-                    </a>
-                </div>
+                <div class="menu-item"><a onclick="loadContent('1. Introduction to Simultaneous Linear Equations', 'slides/1_A_intro_sim_lin_eq.pdf')">1. Introduction to Simultaneous Linear Equations</a></div>
+                <div class="menu-item"><a onclick="loadContent('2. Introduction to Matrices', 'slides/1_Matrices_intro.pdf')">2. Introduction to Matrices</a></div>
+                <div class="menu-item"><a onclick="loadContent('3. Row Operations, REF, RREF and Rank', 'slides/2_row_op_RREF_rank.pdf')">3. Row Operations, REF, RREF and Rank</a></div>
+                <div class="menu-item"><a onclick="loadContent('4. Solving Linear Systems using Different Methods', 'slides/3_solving_LS_diff_methods.pdf')">4. Solving Linear Systems using Different Methods</a></div>
+                <div class="menu-item"><a onclick="loadContent('5. Determinants and Solving Linear Systems', 'slides/4_det_solving_ls_using_row_op.pdf')">5. Determinants and Solving Linear Systems</a></div>
+                <div class="menu-item"><a onclick="loadContent('6. LU Decomposition', 'slides/5_LU_Decomposition.pdf')">6. LU Decomposition</a></div>
+                <div class="menu-item"><a onclick="loadContent('7. Vector Spaces and Linear Combination', 'slides/6_vector_spaces_lc.pdf')">7. Vector Spaces and Linear Combination</a></div>
+                <div class="menu-item"><a onclick="loadContent('8. Linear Combination and Spanning', 'slides/7_LC_spanning_detailed.pdf')">8. Linear Combination and Spanning</a></div>
+                <div class="menu-item"><a onclick="loadContent('9. Subspaces and Linear Independence', 'slides/8_SubSpace_LinInd.pdf')">9. Subspaces and Linear Independence</a></div>
+                <div class="menu-item"><a onclick="loadContent('10. LT Part 1', 'slides/10_LT1.pdf')">10. Linear Transformation Part 1</a></div>
+                <div class="menu-item"><a onclick="loadContent('11. LT Part 2', 'slides/11_LT2.pdf')">11. Linear Transformation Part 2</a></div>
+                <div class="menu-item"><a onclick="loadContent('12. LT Part 3', 'slides/12_LT3.pdf')">12. Linear Transformation Part 3</a></div>
+                <div class="menu-item"><a onclick="loadContent('13. Row and Col Space', 'slides/13_Row_Colmn_Spaces.pdf')">13. Row and Column Spaces</a></div>
+                <div class="menu-item"><a onclick="loadContent('14. Eigenvalues and Eigenvectors', 'slides/14_eigen_values_vectors.pdf')">14. Eigenvalues and Eigenvectors</a></div>
+                <div class="menu-item"><a onclick="loadContent('15. Diagonalization', 'slides/15_diagonalization.pdf')">15. Diagonalization</a></div>
             </div>
         </div>
-        <!-- Problem Sheets Section -->
+
+        <!-- Problem Sheets -->
         <div class="menu-section">
             <div class="menu-section-header" onclick="toggleSection(this)">
                 Problem Sheets
                 <span class="arrow-icon">›</span>
             </div>
             <div class="menu-items collapsed">
-                <div class="menu-item">
-                    <a onclick="loadContent('1. Matrices', 'problemsheets/ProblemSheet_Matrices.pdf')">
-                        1. Matrices
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('2. Cramer, Substitution and Elimination Methods', 'problemsheets/ProblemSheet_Cramer_Substitution_Elimination.pdf')">
-                        2. Cramer, Substitution and Elimination Methods
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('3. REF, RREF and Inverse using Row Operations', 'problemsheets/ProblemSheet_REF_RREF_inv_using_row_op.pdf')">
-                        3. REF, RREF and Inverse using Row Operations
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('4. Linear Independence, Spanning and Linear Combination', 'problemsheets/ProblemSheet_lin_ind_spaning_LC.pdf')">
-                        4. Linear Independence, Spanning and Linear Combination
-                    </a>
-                </div>
-				<div class="menu-item">
-                    <a onclick="loadContent('4. Linear Independence, Spanning and Linear Combination', 'problemsheets/ProblemSheet_Subspace_Bases_Dim.pdf')">
-                        5. Subspace, Basis and Dimension 
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('5. Change of Bases, Column Space, Row Space and Null Space', 'problemsheets/ProblemSheet_Chnge_bases_col_Row_Null_Space.pdf')">
-                        6. Change of Bases, Column Space, Row Space and Null Space
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('6. Linear Transformations and Their Matrices', 'problemsheets/ProblemSheet_LT_Their_Matrices.pdf')">
-                        7. Linear Transformations and Their Matrices
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('7. Eigenvalues, Eigenvectors and Diagonalization', 'problemsheets/ProblemSheet_EVal_EVectors_Diagonalization')">
-                        8. Eigenvalues, Eigenvectors and Diagonalization
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('8. Orthogonality and Least Squares', 'problemsheets/ProblemSheet_Ortho_LeastSquare.pdf')">
-                        9. Orthogonality and Least Squares
-                    </a>
-                </div>
+                <div class="menu-item"><a onclick="loadContent('1. Matrices', 'problemsheets/ProblemSheet_Matrices.pdf')">1. Matrices</a></div>
+                <div class="menu-item"><a onclick="loadContent('2. Cramer, Substitution and Elimination Methods', 'problemsheets/ProblemSheet_Cramer_Substitution_Elimination.pdf')">2. Cramer, Substitution and Elimination</a></div>
+                <div class="menu-item"><a onclick="loadContent('3. REF, RREF and Inverse using Row Operations', 'problemsheets/ProblemSheet_REF_RREF_inv_using_row_op.pdf')">3. REF, RREF and Inverse using Row Operations</a></div>
+                <div class="menu-item"><a onclick="loadContent('4. Linear Independence, Spanning and Linear Combination', 'problemsheets/ProblemSheet_lin_ind_spaning_LC.pdf')">4. Linear Independence, Spanning and LC</a></div>
+                <div class="menu-item"><a onclick="loadContent('5. Subspace, Basis and Dimension', 'problemsheets/ProblemSheet_Subspace_Bases_Dim.pdf')">5. Subspace, Basis and Dimension</a></div>
+                <div class="menu-item"><a onclick="loadContent('6. Change of Bases, Column Space, Row Space and Null Space', 'problemsheets/ProblemSheet_Chnge_bases_col_Row_Null_Space.pdf')">6. Change of Bases, Column, Row, Null Space</a></div>
+                <div class="menu-item"><a onclick="loadContent('7. Linear Transformations and Their Matrices', 'problemsheets/ProblemSheet_LT_Their_Matrices.pdf')">7. Linear Transformations and Their Matrices</a></div>
+                <div class="menu-item"><a onclick="loadContent('8. Eigenvalues, Eigenvectors and Diagonalization', 'problemsheets/ProblemSheet_EVal_EVectors_Diagonalization.pdf')">8. Eigenvalues, Eigenvectors and Diagonalization</a></div>
+                <div class="menu-item"><a onclick="loadContent('9. Orthogonality and Least Squares', 'problemsheets/ProblemSheet_Ortho_LeastSquare.pdf')">9. Orthogonality and Least Squares</a></div>
             </div>
         </div>
-        <!-- Quizzes Section -->
-        <div class="menu-section">
-            <div class="menu-section-header" onclick="toggleSection(this)">
-                Quizzes
-                <span class="arrow-icon">›</span>
-            </div>
-            <div class="menu-items collapsed">
-                <div class="menu-item">
-                    <a onclick="loadContent('1. Quiz 1', 'quizzes/Quiz1_24DS.pdf')">
-                        1. Quiz 1
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('2. Quiz 2', 'quizzes/Quiz2_24DS.pdf')">
-                        2. Quiz 2
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('3. Quiz 3', 'quizzes/Quiz3_24DS.pdf')">
-                        3. Quiz 3
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('4. Quiz 4', 'quizzes/Quiz4_24DS.pdf')">
-                        4. Quiz 4
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Assignments Section -->
+
+        <!-- Assignments -->
         <div class="menu-section">
             <div class="menu-section-header" onclick="toggleSection(this)">
                 Assignments
                 <span class="arrow-icon">›</span>
             </div>
             <div class="menu-items collapsed">
-                <div class="menu-item">
-                    <a onclick="loadContent('1. Assignment 1', 'assignments/Assignment1_24DS.pdf')">
-                        1. Assignment 1
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('2. Assignment 2', 'assignments/Assignment2_24DS.pdf')">
-                        2. Assignment 2
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('3. Assignment 3', 'assignments/Assignment3_24DS.pdf')">
-                        3. Assignment 3
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a onclick="loadContent('4. Assignment 4', 'assignments/Assignment4_24DS.pdf')">
-                        4. Assignment 4
-                    </a>
-                </div>
-				
+                <div class="menu-item"><a onclick="loadContent('1. Consolidated Assignment No. 1', 'assignments/Consolidated_Assignment_1_24DS.pdf')">Consolidated Assignment No. 1</a></div>
+                <div class="menu-item"><a onclick="loadContent('2. Consolidated Assignment 2', 'assignments/Consolidated_Assignment_2_24DS.pdf')">Consolidated Assignment No. 2</a></div>
+                <div class="menu-item"><a onclick="loadAssignmentSubmission('assignment1')">📌 Assignment 1 Submission</a></div>
+                <div class="menu-item"><a onclick="loadAssignmentSubmission('assignment2')">📌 Assignment 2 Submission</a></div>
             </div>
-          </div>
-		<div class="menu-section">
-			<div class="menu-section-header" onclick="loadContent('Upload your Assignment No. 1','upload_assign1.html')">
-                Assignment Submissions
-			</div>
-		</div>
-
-
+        </div>
     </div>
-
 
     <!-- RIGHT CONTENT -->
-
     <div class="right-panel" id="rightPanel">
-
         <div class="initial-message">
             <h3>Welcome to Linear Algebra Course</h3>
-            <p>Resources for course Linear Algebra
-This page contains lecture slides, problem sheets, quizzes, and assignments for the 24 DS Batch . Course is taught during the Spring 2026 semester.
-
-Course contents include:
-
-Lecture Slides
-Problem Sheets
-Quizzes
-Assignments</p>
+            <p>Resources for course Linear Algebra</p>
+            <p>This page contains lecture slides, problem sheets, quizzes, and assignments for the 24 DS Batch. Course is taught during the Spring 2026 semester.</p>
+            <p><strong>Course contents include:</strong> Lecture Slides, Problem Sheets, Quizzes, Assignments</p>
         </div>
-
     </div>
-
 </div>
 
-
 <footer>
+    Back to <a href="https://ahsheikh.github.io/Courses/Teaching.html">Teaching Page</a> of Abdul Hanan Sheikh<br>
     © AHS 2026 | Linear Algebra Course
 </footer>
 
 <script>
+    // Toggle menu sections
+    function toggleSection(header) {
+        const itemsContainer = header.nextElementSibling;
+        const arrowIcon = header.querySelector('.arrow-icon');
 
-function toggleSection(header) {
-    const itemsContainer = header.nextElementSibling;
-    const arrowIcon = header.querySelector('.arrow-icon');
-    
-    // Close all other sections
-    document.querySelectorAll('.menu-section-header').forEach(h => {
-        if (h !== header) {
-            h.classList.remove('expanded');
-            h.nextElementSibling.classList.add('collapsed');
-        }
-    });
-    
-    // Toggle current section
-    header.classList.toggle('expanded');
-    itemsContainer.classList.toggle('collapsed');
-}
+        document.querySelectorAll('.menu-section-header').forEach(h => {
+            if (h !== header) {
+                h.classList.remove('expanded');
+                h.nextElementSibling.classList.add('collapsed');
+            }
+        });
 
-function loadContent(title, filePath) {
-    const rightPanel = document.getElementById('rightPanel');
-    
-    // Remove active class from all menu items
-    document.querySelectorAll('.menu-item a').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    // Add active class to clicked item
-    event.target.classList.add('active');
-    
-    // Conditionally include download button (hide for Assignment Submissions)
-    const downloadBtn = filePath !== 'upload_assign1.html' 
-        ? `<a href="${filePath}" download class="download-btn" style="margin: 0;">⬇ Download</a>` 
-        : '';
-    
-    // Build the content with PDF iframe
-    const html = `
-        <div style="display: flex; flex-direction: column; height: 100%; gap: 15px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <h2 style="margin: 0; color: #1f3c88; font-size: 22px;">${title}</h2>
-                ${downloadBtn}
+        header.classList.toggle('expanded');
+        itemsContainer.classList.toggle('collapsed');
+    }
+
+    // Load PDF content (for slides, sheets, assignments)
+    function loadContent(title, filePath) {
+        const rightPanel = document.getElementById('rightPanel');
+        document.querySelectorAll('.menu-item a').forEach(item => item.classList.remove('active'));
+        if (event && event.target) event.target.classList.add('active');
+
+        const html = `
+            <div style="display: flex; flex-direction: column; height: 100%; gap: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <h2 style="margin: 0; color: #1f3c88; font-size: 22px;">${title}</h2>
+                    <a href="${filePath}" download class="download-btn" style="margin: 0;">⬇ Download</a>
+                </div>
+                <iframe src="${filePath}" style="flex:1; border:none; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);" title="${title}"></iframe>
             </div>
-            
-            <iframe 
-                src="${filePath}" 
-                style="flex: 1; border: none; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"
-                title="${title}">
-            </iframe>
-        </div>
-    `;
-    
-    rightPanel.innerHTML = html;
-    rightPanel.scrollTop = 0;
-}
+        `;
+        rightPanel.innerHTML = html;
+        rightPanel.scrollTop = 0;
+    }
+
+    // Load assignment submission UI (no download button, blue-rectangled cards)
+    function loadAssignmentSubmission(type) {
+        const rightPanel = document.getElementById('rightPanel');
+        document.querySelectorAll('.menu-item a').forEach(item => item.classList.remove('active'));
+        if (event && event.target) event.target.classList.add('active');
+
+        let title = '';
+        let uploadId = '';
+        let responseId = '';
+        if (type === 'assignment1') {
+            title = 'Upload your Assignment File (Assignment 1)';
+            uploadId = 'fileInput1';
+            responseId = 'responseMsg1';
+        } else if (type === 'assignment2') {
+            title = 'Upload your Assignment File (Assignment 2)';
+            uploadId = 'fileInput2';
+            responseId = 'responseMsg2';
+        }
+
+        // The blue-rectangled card with upload area, NO download button
+        const html = `
+            <div style="background:white; border-radius:12px; padding:10px 0;">
+                <div class="assignment-submission-card">
+                    <h3>${title}</h3>
+                    <p style="color:#1f3c88; font-weight:500; margin:10px 0 16px 0;">
+                        <strong>Make sure to rename file as your student roll number (for example 24DS12.pdf) and upload.</strong>
+                    </p>
+                    <div class="upload-area">
+                        <input type="file" id="${uploadId}" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" />
+                        <span class="file-name" id="fileNameDisplay${type === 'assignment1' ? '1' : '2'}">No file chosen</span>
+                        <button class="submit-btn" onclick="submitAssignment('${uploadId}', '${responseId}')">Submit your upload</button>
+                    </div>
+                    <div id="${responseId}" class="response-msg" style="display:none;"></div>
+                </div>
+                <!-- Also show the other assignment card below for quick access (optional), but we already have two separate menu items -->
+            </div>
+        `;
+        rightPanel.innerHTML = html;
+        rightPanel.scrollTop = 0;
+
+        // Update file name display on selection
+        const fileInput = document.getElementById(uploadId);
+        if (fileInput) {
+            fileInput.addEventListener('change', function() {
+                const displaySpan = document.getElementById('fileNameDisplay' + (type === 'assignment1' ? '1' : '2'));
+                if (this.files && this.files.length > 0) {
+                    displaySpan.textContent = this.files[0].name;
+                } else {
+                    displaySpan.textContent = 'No file chosen';
+                }
+            });
+        }
+    }
+
+    // Submit assignment to Google Apps Script (replace with your URL)
+    function submitAssignment(inputId, responseId) {
+        const fileInput = document.getElementById(inputId);
+        const file = fileInput.files[0];
+        const responseDiv = document.getElementById(responseId);
+        responseDiv.style.display = 'block';
+
+        if (!file) {
+            responseDiv.innerText = '⚠️ Please select a file first.';
+            responseDiv.style.background = '#ffe6e6';
+            responseDiv.style.color = '#b30000';
+            return;
+        }
+
+        // Validate file name format (optional: check roll number pattern)
+        const fileName = file.name;
+        const pattern = /^24DS\d{2}\.pdf$/i;
+        if (!pattern.test(fileName)) {
+            responseDiv.innerText = '⚠️ File name must be in format 24DSXX.pdf (e.g., 24DS12.pdf)';
+            responseDiv.style.background = '#ffe6e6';
+            responseDiv.style.color = '#b30000';
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        // **********************************************
+        // REPLACE THE URL BELOW WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+        // **********************************************
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby1Ly47slg62fWYfO_Xr7dn3oCUSlYqWkDfLcFrAaCBjZrLI2HX_m8XpJ1vhleFYmnl/exec';   // <-- REPLACE THIS
+
+        responseDiv.innerText = '⏳ Uploading...';
+        responseDiv.style.background = '#e9f0fa';
+        responseDiv.style.color = '#1f3c88';
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            responseDiv.innerText = '✅ ' + (data.message || 'Upload successful!');
+            responseDiv.style.background = '#e0f2e0';
+            responseDiv.style.color = '#006600';
+            // Optionally clear file input
+            fileInput.value = '';
+            const displaySpan = document.getElementById('fileNameDisplay' + (inputId.includes('1') ? '1' : '2'));
+            if (displaySpan) displaySpan.textContent = 'No file chosen';
+        })
+        .catch(error => {
+            responseDiv.innerText = '❌ Error: ' + error;
+            responseDiv.style.background = '#ffe6e6';
+            responseDiv.style.color = '#b30000';
+        });
+    }
+
+    // When the page loads, ensure menu sections are collapsed (except maybe first)
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.menu-items').forEach(el => el.classList.add('collapsed'));
+        // Optionally expand first section (Lecture Slides) by default? keep collapsed.
+    });
 
 </script>
 
