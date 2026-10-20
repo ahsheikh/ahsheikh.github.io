@@ -77,14 +77,96 @@ Quantifiers)</A>
 <LI> <A HREF="Graphs2_Trees.pdf">Presentation 12 (Graphs - 3 and Trees) </A>
 </UL>
 
-<UL>
-<h1> Assignments and Practice Questions </h1>
-<LI> Sets and Functions <A HREF="assignment1.pdf"> Assignment 1 </A>
-<LI> Algorithms <A HREF="assignment2.pdf"> Assignment 2 </A>
-<LI> Submission Link for Assignment 2 <A HREF="https://docs.google.com/forms/d/e/1FAIpQLSedTnDUiiR4u1zZCpowvDvRZkFwPx-zDBhII0ajf2lGeaesUw/viewform?usp=header"> Submission Link </A>
-<LI> Topic 3 <A HREF="assignment3.pdf">Assignment 3</A> <p> and <A HREF="assignment4.pdf"> Assignment 4</A>
+<h1>Assignments</h1>
 
-</UL>
+<!-- 
+  Changed from <UL> to <OL> so items are enumerated (numbered).
+  The original <UL> closing tag replaced with </OL>.
+  All <LI> elements remain same, now numbered automatically.
+-->
+<ol>
+
+  <!-- Item 1 -->
+  <li>
+    <strong> 
+    <a href="assignment1_DM.pdf"> Assignemnt 1 (Topics: Sets, Relations and Functions) </a> </strong>  
+<br>
+      <span style="font-weight:600;">Upload Assignment 1 (PDF only)</span>
+    <div class="upload-block">
+      <br>
+      <input type="file" id="pdfInput" accept=".pdf,application/pdf" required>
+      <br>
+      <button id="uploadBtn">Upload</button>
+      <div id="msg"></div>
+      <script>
+        // ★ Replace with your Apps Script Web App URL (kept as original)
+        const SCRIPT_URL = "https://script.google.com/a/macros/quest.edu.pk/s/AKfycbzqHiDSK6Wgo4BA9pUlMrS8gUSy1gyvkDIam_xMb7uwBMlsCg3GgorGgkyhULF_AzvQjw/exec";
+
+        document.getElementById("uploadBtn").addEventListener("click", function () {
+          const fileInput = document.getElementById("pdfInput");
+          const file = fileInput.files[0];
+          const msg = document.getElementById("msg");
+
+          if (!file) {
+            msg.textContent = "Please select a file first.";
+            return;
+          }
+
+          // Frontend also enforces PDF-only
+          if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
+            msg.textContent = "Only PDF files are allowed.";
+            return;
+          }
+
+          msg.textContent = "Uploading...";
+
+          const formData = new FormData();
+          formData.append("pdfFile", file);
+          formData.append("fileName", file.name);
+
+          fetch(SCRIPT_URL, {
+            method: "POST",
+            body: formData
+          })
+          .then(res => res.json())
+          .then(data => {
+            if (data.status === "success") {
+              msg.textContent = "Upload successful!";
+              fileInput.value = "";
+            } else {
+              msg.textContent = "Error: " + data.message;
+            }
+          })
+          .catch(err => {
+            msg.textContent = "Upload failed: " + err;
+          });
+        });
+      </script>
+    </div>
+  </li>
+<hr>
+  <!-- Item 3 -->
+  <li>
+    <strong>Algorithms</strong> 
+    <a href="assignment2.pdf">Assignment 2</a>
+<br>
+    <strong>Submission Link for Assignment 2</strong> 
+    <a href="https://forms.gle/8BQn4Mcf3SG1Q1Zb7">Submission Link</a>
+  </li>
+<hr>
+  <!-- Item 5: Assignment 3 and Assignment 4 with paragraph (matching original) -->
+  <li>
+    <strong>Assignment 3</strong> 
+    <a href="assignment3.pdf">Assignment 3</a> 
+    <span class="small-meta">and</span> 
+    <a href="assignment4.pdf">Assignment 4</a>
+<br> 
+ <strong>Submission Link for Assignment 3</strong> 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSedTnDUiiR4u1zZCpowvDvRZkFwPx-zDBhII0ajf2lGeaesUw/viewform?usp=header">Submission Link</a>
+  </li>
+
+</ol>
+
 
 </SPAN></SPAN>
 </P>
