@@ -122,14 +122,11 @@ Quantifiers)</A>
     <option value="assignment1_QR">Assignment 1</option>
     <option value="assignment2_QR">Assignment 2</option>
   </select>
-
   <br><br>
-
   <input type="file" id="pdfInput" accept=".pdf,application/pdf" required>
   <br>
   <button id="uploadBtn">Upload</button>
   <div id="msg"></div>
-
   <script>
     // ★ Paste the Web app URL you got in Step 3 here
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyEYKrbkzdfJDcWyMY_eqc7AEXDja3qQCZQEO5uWIUiJ76lEJOAUhupd2DIiuiuwto/exec";
@@ -151,12 +148,10 @@ Quantifiers)</A>
       }
 
       msg.textContent = "Uploading...";
-
       const formData = new FormData();
       formData.append("pdfFile", file);
       formData.append("fileName", file.name);
       formData.append("assignment", assignment); // ★ Only pass the code, not the folder ID
-
       fetch(SCRIPT_URL, {
         method: "POST",
         body: formData
@@ -184,7 +179,7 @@ Quantifiers)</A>
 </TD>
 </TR>
 </TABLE>
-<P><BR><BR>
+<P><BR>
 </P>
       </div>
     </div>
