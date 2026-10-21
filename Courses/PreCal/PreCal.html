@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page for Course Pre Calculus-I: — Dr. Abdul Hanan Sheikh</title>
-<meta name="description" content="Course materials: Page for Course Pre Calculus-I:. Dr. Abdul Hanan Sheikh, QUEST Nawabshah.">
+<title> Pre-Calculus-I (26CS-Evening) — Prof. Dr. Abdul Hanan Sheikh</title>
+<meta name="description" content="Course materials: Pre-Calculus-I (26CS-Evening). Prof. Dr. Abdul Hanan Sheikh, QUEST Nawabshah.">
 <link rel="icon" href="../../book.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,14 +46,145 @@
     <div class="container">
       <a class="breadcrumb" href="../../Courses/Teaching.html">&larr; Back to courses</a>
       <p class="eyebrow">Teaching</p>
-      <h1>Page for Course Pre Calculus-I:</h1>
-      <p class="page-header__intro">Lecture materials, syllabi and useful links for this course.</p>
+      <h1>Pre-Calculus - I</h1>
+      <p class="page-header__intro">Course Syllabus, Course Materials, and useseful links for the course.</p>
     </div>
   </header>
   <section class="section" style="border-bottom:none;">
     <div class="container">
       <div class="content-prose reveal">
-This page facilitates the students of the course with Lecture materials and assignments etc. <UL> <LI> <A HREF="Lec1_Sets.pdf">Lecture 1 - Slides on Sets. </A> <LI> <A HREF="exercise_lec1.pdf">Lecture 1 - Exercise. </A> </UL> </SPAN></SPAN> </P> </SPAN></SPAN> </P> </UL> </TD> </TR> </TABLE> <P><BR><BR> </P>
+This page facilitates the students of the course with Presentations, Problem Sheets and Assignments etc.
+<UL>
+<h1> Recommended Texts: </h1>
+<LI> Text Book Discrete Mathematics with Appliations, 7th Ed. by Kenneth H Rozen <A HREF="TextBook_Discrete_Maths_with_application_Kenneth_H_Rozen_7th_editon.pdf"> Download Here</A>
+<LI> Reference Book <A HREF="RefBook_Discrete Mathematics with Applications by Susanna S. Epp - 4th Edition.pdf"> Download Here</A>
+</UL>
+
+<UL>
+<h1> Presentations </h1>
+<LI> <A HREF="Lecture1_Sets.pdf"> Presentation 1 (Sets-Part 1) </A>
+<LI> <A HREF="Lecture1_Sets_Part2.pdf"> Presentation 1 (Sets-Part 2) </A>
+<LI> <A HREF="Lecture2_SetOperations.pdf">Presentation 2 (Set Operations) </A>
+<LI> <A HREF="Lecture3_Functions_Part1.pdf">Presentation 3 (Functions - Part1)</A>
+<LI> <A HREF="Lecture3_Functions_Part2.pdf">Presentation 3 (Functions - Part2)</A>
+<LI> <A HREF="Lecture4_Relations.pdf">Presentation 4 (Relations) </A>
+<LI> <A HREF="Lecture5_Propositional_Logic.pdf">Presentation 5 (Propositional Logic) </A>
+<LI> <A HREF="Lecture6_Equivalence_Logic.pdf">Presentation 6 (Equivalence Logic - Applications)</A>
+<LI> <A HREF="Lecture7_Quantifiers_Predictors.pdf">Presentation 7 (Predicates and
+Quantifiers)</A>
+<LI> <A HREF="Lecture8_Seq_Ser_Sum.pdf">Presentation 8 (Sequence and Series and Summations)</A>
+<LI> <A HREF="Algo.pptx"> Presentation 9 (Algorithms) </A>
+<LI> <A HREF="Graphs1.pdf">Presentation 10 (Graphs - 1) </A>
+<LI> <A HREF="Graphs2.pdf">Presentation 11 (Graphs - 2) </A>
+<LI> <A HREF="Graphs2_Trees.pdf">Presentation 12 (Graphs - 3 and Trees) </A>
+</UL>
+
+
+
+
+
+
+
+
+
+<h1>Assignments</h1>
+<ol>
+  <!-- Item 1 -->
+  <li>
+    <strong> 
+    <a href="Assignment1_sets_fns_relations.pdf"> Assignemnt 1 (Topics: Sets, Relations and Functions) </a> </strong>  
+  </li>
+<hr>
+  <!-- Item 2 -->
+  <li>
+    <strong> 
+	<a href="assignment2.pdf">Assignment 2 (Algorithms)</a>
+	</strong>
+  </li>
+<hr>
+  <!-- Item 3: Assignment 3 and Assignment 4 with paragraph (matching original) -->
+  <li>
+    <strong>Assignment 3</strong> 
+    <a href="assignment3.pdf"> Coming Soon </a> 
+    <span class="small-meta">and</span> 
+    <a href="assignment4.pdf">Coming Soon</a>
+  </li>
+</ol>
+<hr>
+
+  <h1>Upload Assignment (PDF only)</h1>
+
+  <!-- Student selects which assignment to submit -->
+  <label>Select Assignment Number: </label>
+  <select id="assignmentSelect">
+    <option value="assignment1">Assignment 1</option>
+    <option value="assignment2">Assignment 2</option>
+  </select>
+
+  <br><br>
+
+  <input type="file" id="pdfInput" accept=".pdf,application/pdf" required>
+  <br>
+  <button id="uploadBtn">Upload</button>
+  <div id="msg"></div>
+
+  <script>
+    // ★ Paste the Web app URL you got in Step 3 here
+    const SCRIPT_URL = "https://script.google.com/a/macros/quest.edu.pk/s/AKfycbwKXwA4D41D38q2O5oVaZrpZkb26HN6pAZilQqIvNgeyfeIMxnVD_Os_XHmwjtZfTVz/exec";
+
+    document.getElementById("uploadBtn").addEventListener("click", function () {
+      const fileInput = document.getElementById("pdfInput");
+      const file = fileInput.files[0];
+      const msg = document.getElementById("msg");
+      const assignment = document.getElementById("assignmentSelect").value;
+
+      if (!file) {
+        msg.textContent = "Please select a file first.";
+        return;
+      }
+
+      // Frontend also enforces PDF only
+      if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
+        msg.textContent = "Only PDF files are allowed.";
+        return;
+      }
+
+      msg.textContent = "Uploading...";
+
+      const formData = new FormData();
+      formData.append("pdfFile", file);
+      formData.append("fileName", file.name);
+      formData.append("assignment", assignment); // ★ Only pass the code, not the folder ID
+
+      fetch(SCRIPT_URL, {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "success") {
+          msg.textContent = "Upload successful!";
+          fileInput.value = "";
+        } else {
+          msg.textContent = "Error: " + data.message;
+        }
+      })
+      .catch(err => {
+        msg.textContent = "Upload failed: " + err;
+      });
+    });
+  </script>
+
+</SPAN></SPAN>
+</P>
+</SPAN></SPAN>
+</P>
+</UL>
+</TD>
+</TR>
+</TABLE>
+<P><BR><BR>
+</P>
       </div>
     </div>
   </section>
