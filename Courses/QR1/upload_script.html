@@ -1,0 +1,58 @@
+Assignment upload script  
+  
+  <h1>Upload Assignment (PDF only)</h1>
+
+  <!-- Student selects which assignment to submit -->
+  <label>Select Assignment Number: </label>
+  <select id="assignmentSelect">
+    <option value="assignment1_QR">Assignment 1</option>
+    <option value="assignment2_QR">Assignment 2</option>
+  </select>
+  <br><br>
+  <input type="file" id="pdfInput" accept=".pdf,application/pdf" required>
+  <br>
+  <button id="uploadBtn">Upload</button>
+  <div id="msg"></div>
+  <script>
+    // ★ Paste the Web app URL you got in Step 3 here
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyEYKrbkzdfJDcWyMY_eqc7AEXDja3qQCZQEO5uWIUiJ76lEJOAUhupd2DIiuiuwto/exec";
+    document.getElementById("uploadBtn").addEventListener("click", function () {
+      const fileInput = document.getElementById("pdfInput");
+      const file = fileInput.files[0];
+      const msg = document.getElementById("msg");
+      const assignment = document.getElementById("assignmentSelect").value;
+
+      if (!file) {
+        msg.textContent = "Please select a file first.";
+        return;
+      }
+
+      // Frontend also enforces PDF only
+      if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
+        msg.textContent = "Only PDF files are allowed.";
+        return;
+      }
+
+      msg.textContent = "Uploading...";
+      const formData = new FormData();
+      formData.append("pdfFile", file);
+      formData.append("fileName", file.name);
+      formData.append("assignment", assignment); // ★ Only pass the code, not the folder ID
+      fetch(SCRIPT_URL, {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "success") {
+          msg.textContent = "Upload successful!";
+          fileInput.value = "";
+        } else {
+          msg.textContent = "Error: " + data.message;
+        }
+      })
+      .catch(err => {
+        msg.textContent = "Upload failed: " + err;
+      });
+    });
+  </script>
